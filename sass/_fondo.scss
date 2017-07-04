@@ -1,0 +1,47 @@
+.barra{
+  height: 70px;
+  background-color: #3e3e3e;
+}
+
+.fondo{
+  background-image: url("../img/fondo.png");
+  height: 444px;
+  width: 100%;
+  background-position: center;
+  -webkit-filter: blur(10px);
+}
+
+.items-fondo{
+  position: absolute;
+  top: em(70px);
+  z-index: 1;
+  left: 18%;
+  text-align: center;
+  height: 444px;
+}
+
+.img-fondo{ width: 100%; }
+
+.boton-fondo{
+  position: relative;
+  cursor: pointer;
+  width: 200px;
+  left: 38%;
+  top: em(-100px);
+  color: $blanco2;
+  font-size: em(14px);
+  border-radius: 2px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.texto-fondo{
+  position: relative;
+  top: em(-110px);
+  left: 18%;
+  line-height: .88;
+  color:$blanco;
+  text-align: center;
+  font-size: em(25px);
+  width: 55%;
+}

@@ -1,0 +1,32 @@
+-var pi = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
+-var pii = "Front Desk, con sus más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.  Una vez configurado el Front Parámetros, este módulo nos permite de u"
+-var boxs = [{img:"img/compras.png",title:"Inventarios",text:p2},{img:"img/compras.png",title:"Ordenes de Compra",text:p2},{img:"img/compras.png",title:"Previsión de Compras",text:p2}]
+-var img = "img/compras.png"
+
+mixin box(img,title,text)
+  .column
+    img.w(src="#{img}")
+    h3.h3-change #{title}
+    p.p-change #{text}
+    
+mixin item(img,img2,title,p1,p2,box)
+  .img-center
+    img(src="#{img}" id="logo")
+  p.p-change #{p1}
+  br
+  .back.f0
+    .columns
+      .column
+        h3.h3-change #{title}
+        p.p-change #{p2}
+      .column
+        img(src="#{img2}")
+  .columns.plr-3em
+    each val in box
+      +box(val.img,val.title,val.text)
+
+.owl-carousel#carrusel
+  .item(data-hash="0")
+    +item("img/l1.png",img,"COMPRAS",pi,pii,boxs)
+  .item(data-hash="1")
+    +item("img/l2.png",img,"COMPRAS",pi,pii,boxs)

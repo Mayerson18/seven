@@ -1,0 +1,47 @@
+//output:../index2.html
+-var p1 = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
+-var lis = ["FRONT DESK","DECISIONES SUPPORT SYSTEM","COMUNICATION","ACCOUTING","TOUR OPERATION","POINT OF SALES BILLING","PAYROLL","MULTIPROPERTY","FIXED ASSET","MANAGMENT","MAIL SERVICE","ONLINE RESERVATION"]
+
+mixin lis(id,text)
+  if id==0
+    li.li.current
+      a.a(data-id="#{id}", href="#{'#'+ id}") #{text}
+  else
+    li.li
+      a.a(data-id="#{id}", href="#{'#'+ id}") #{text}
+include header.pug.jade
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
+body
+  
+  .barra
+    .col-xs-2
+  .items-fondo
+    img.img-fondo(src="img/fondo.png")
+    .texto-fondo My Seven Suite es un Software superior, Realice una mejor gestion de su Hotel o Resort
+    .boton-fondo SOLICITA MAS INFORMACIÓN
+    
+  .fondo
+  br
+  br
+  .columns.plr-3em
+    .is-3.column
+      h2.productos Nuestros Productos
+      nav
+        ul
+          each val, index in lis
+            +lis(index,val)
+    .column
+      .owl-carousel
+        include productos.pug.jade
+
+  img(src="img/modulos.png" width="100%")
+  .center
+    .mas Mas de #[strong 100] Clientes Felices
+      
+      
+  include contactenos.pug.jade
+  include footer.pug.jade
+  
+script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js")
+script(src="js/index.js")

@@ -1,0 +1,68 @@
+@import "var";
+@import "mixins";
+@import "media";
+@import "fondo";
+@import "margenes";
+@import "v1";
+@import "v2";
+@import "contact";
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+ul{/* Custom li*/
+  list-style: none!important;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+li{ padding-left: 5px; }
+
+a{/*Custom a*/
+  color: $rojo;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+h4{ margin-bottom: 0px; }
+
+input{ height: 53px; }
+
+textarea{ height: 115px; }
+
+.center{ text-align: center; }
+
+.none{ display: none; }
+
+.w{ width: 100%; }
+
+.item{
+  padding: 0px 3em;
+}
+
+.footer{
+  height: 73px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0px;
+}
+
+.in-footer{
+  position: relative;
+  top: 26px;
+}
+
+.function{
+  color: $rojo;
+  font-size: em(14px);
+}
+
+.productos{
+  @include textos(2em,bold,#1d1d1d,1.03);
+  opacity: .76;
+}

@@ -1,0 +1,29 @@
+-var ops = ["Operaciones sobre Habitaciones","Operaciones sobre Folios","Reservas"]
+-var tit = "FRONT DESK"
+-var txt = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
+-var imgi = "img/l2.png"
+-var imgii = "img/img1.png"
+-var obj = {title:tit,text:txt,img1:imgi,img2:imgii,ops:ops}
+-var json = [obj,obj]
+mixin op(o)
+  each val in o
+    li.function #{val}
+mixin products(title,text,img1,img2,operations,index)
+  .item(data-hash="#{index}")
+    .content
+      .row
+        h1.content-title #{title}
+        .flex-end
+          img.logo-blue(src="#{img1}", alt="Seven")
+      p.content-body #{text}
+      .columns
+        .column.is-4
+          h4.content-sub-title Algunas Funciones
+          ul#function
+            +op(operations)
+            //li.function  #[span.new NEW]
+          .boton-products SOLICITA MAS INFORMACIÓN
+        .column
+          img#img(src="#{img2}" width="100%")
+each val,index in json
+  +products(val.title,val.text,val.img1,val.img2,val.ops,index)
