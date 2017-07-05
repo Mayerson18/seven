@@ -44,3 +44,9 @@
   font-size: em(36px)!important;
   font-weight: 600;
 }
+
+.function{
+  & > a{
+    font-size: inherit;
+  }
+}
