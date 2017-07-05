@@ -30,6 +30,7 @@ $b.hover( function(e){//mouseenter
   var x = $(".active").find(".img");
   var index = parseInt(x.data("index"));
   var img = x.data("img");
+  console.log(img)
   i = (index>=img.length) ? 0 : index;
   animation(x,img,i);
 },function(){//mouseout

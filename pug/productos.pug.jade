@@ -5,7 +5,6 @@
 -var imgii = "img/img1.png"
 -var obj = {title:tit,text:txt,img1:imgi,img2:imgii,ops:ops}
 -var json = [obj,obj]
--var zero = ["zero","uno","dos"]
 
 mixin op(o)
   each val,index in o
@@ -25,7 +24,7 @@ mixin products(title,text,img1,img2,operations,index)
           h4.content-sub-title Algunas Funciones
           ul#function
             +op(operations)
-            //li.function  #[span.new NEW]
+            li.function  #[span.new NEW]
           .boton-products SOLICITA MAS INFORMACIÓN
         .column
           img.img(src="#{img2}" width="100%" data-index="0" data-img='["img/img1.png","img/l2.png"]')
