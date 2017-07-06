@@ -1,7 +1,7 @@
--var items = ["INVENTORY","FRONT DESK","COMUNICATION","TOUR OPERATION","PAYROLL","FIXED ASSET","MANAGMENT","COMUNICATION","TOUR OPERATION"]
+-var items = ["INVENTORY","FRONT DESK","ACCOUTING","POINT OF SALES","PAYROLL","FIXED ASSET","MANAGEMENT","COMUNICATION","TOUR OPERATION"]
 mixin navs(val,index)
   .column.center
-    a.none(href="#{'#'+index}") coki
+    a.none(href="#{'#'+index}")
     .oval(class="l#{index}",data-id="#{index}") 
       img.log(src="img/logo#{index + 1}.png")
     p(class="p#{index}") #{val}

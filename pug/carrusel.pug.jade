@@ -1,7 +1,21 @@
--var pi = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
--var pii = "Front Desk, con sus más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.  Una vez configurado el Front Parámetros, este módulo nos permite de u"
--var boxs = [{img:"img/compras.png",title:"Inventarios",text:p2},{img:"img/compras.png",title:"Ordenes de Compra",text:p2},{img:"img/compras.png",title:"Previsión de Compras",text:p2}]
+-var p1_inventory = "Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"
+-var p2_inventory = ["Control, compras,  traslado, toma física. ","Órdenes y solicitudes de compra.","Control de traslado entre departamentos. "]
+-var p1_front = "El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos."
+-var p2_front = ["Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción).","Manejo de reservas","Operaciones Sobre habitaciones","Estadísticas"]
+-var p1_fixed = "El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos."
+-var p2_fixed = ["Configuración de áreas para los activos.","Inventario de Activos Fijos","Traslado de Activos"]
+-var p1_accounting = "Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multi-moneda y manejo de varias empresas contables."
+-var p2_accounting = ["Asientos Contables","Catálogo de Cuentas","Conciliación Bancaria","Extracto de Cuentas","Manejo de Presupuestos"]
+-var p1_payroll = "Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla."
+-var p2_payroll = ["Control de cuentas por cobrar y pagar por empleado. ","Histórico por planillas.","Cálculos automáticos de aguinaldos, vacaciones, cesantías, entre otros."]
+-var p1_point = "El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. "
+-var p2_point = ["Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta.","Informe de Ventas","Mapa de Mesas","Selección de cuentas contables para enlaces."]
+-var p1_management = "El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios."
+-var p2_management = ["Selección de permisos por usuario, opción por opción en cada uno de los módulos.","Histórico de movimientos de los usuarios en los módulos."]
+-var p1_online = "Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk."
+-var p2_online = ["Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.","Integración de contrato con Seven Front Desk.","Administración de logos e imágenes promocionales. "]
 -var img = "img/compras.png"
+-var boxs = [{img:img,title:"Inventarios",text:p2},{img:img,title:"Ordenes de Compra",text:p2},{img:img,title:"Previsión de Compras",text:p2}]
 
 mixin box(img,title,text)
   .column
@@ -9,16 +23,17 @@ mixin box(img,title,text)
     h3.h3-change #{title}
     p.p-change #{text}
     
-mixin item(img,img2,title,p1,p2,box)
+mixin item(f,img,img2,title,p1,p2,box)
   .img-center
     img(src="#{img}" id="logo")
   p.p-change #{p1}
   br
-  .back.f0
+  .back(class="#{f}")
     .columns
       .column
         h3.h3-change #{title}
-        p.p-change #{p2}
+        each val in p2
+          p.p-change #{val}
       .column
         img(src="#{img2}")
   .columns.plr-3em
@@ -27,6 +42,18 @@ mixin item(img,img2,title,p1,p2,box)
 
 .owl-carousel#carrusel
   .item(data-hash="0")
-    +item("img/l1.png",img,"COMPRAS",pi,pii,boxs)
+    +item("inventory-f","img/productos/inventory.png",img,"Inventory",p1_inventory,p2_inventory,boxs)
   .item(data-hash="1")
-    +item("img/l2.png",img,"COMPRAS",pi,pii,boxs)
+    +item("front-f","img/productos/front.png",img,"Front Desk",p1_front,p2_front,boxs)
+  .item(data-hash="2")
+    +item("accounting-f","img/productos/accounting.png",img,"Accounting (manejo de contabilidad)",p1_accounting,p2_accounting,boxs)
+  .item(data-hash="3")
+    +item("point-f","img/productos/point.png",img,"Point of Sales",p1_point,p2_point,boxs)
+  .item(data-hash="4")
+    +item("payroll-f","img/productos/payroll.png",img,"Payroll",p1_payroll,p2_payroll,boxs)
+  .item(data-hash="5")
+    +item("fixed-f","img/productos/fixed.png",img,"Fixed Assets",p1_fixed,p2_fixed,boxs)
+  .item(data-hash="6")
+    +item("management-f","img/productos/management.png",img,"Management",p1_management,p2_management,boxs)
+  .item(data-hash="7")
+    +item("online-f","img/productos/online.png",img,"Reservas Online",p1_online,p2_online,boxs)
