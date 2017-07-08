@@ -50,3 +50,36 @@
     font-size: inherit;
   }
 }
+
+.casos-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.casos{
+  & > a{
+    @include textos(em(25px),300,#a2a1a1,initial);
+    letter-spacing: 0.1px;
+  }
+}
+
+.active {
+  & > a{
+    color: $rojo!important;
+  }
+}
+
+.casos-item{
+  & > p{
+    text-align: center;
+  }
+}
+.img-cr{
+  width: 56px!important;
+}
+.img-item{
+  max-width: 260px;
+  min-width: 260px!important;
+  height: 167px;
+}

@@ -58,3 +58,57 @@ function products(title,text,img1,img2,operations,index){
   `;
   return html;
 }
+
+
+const hotel1 = {img:"img/casos/hoteles/agualcas.jpg",url:"agualcas.com",img2:"img/flag-cr.png"}
+const hotel2 = {img:"img/casos/hoteles/cano-negro.png",url:"agualcas.com",img2:"img/flag-cr.png"}
+const hotel3 = {img:"img/casos/hoteles/casa-roland-marina-golfito.png",url:"agualcas.com",img2:"img/flag-cr.png"}
+const hotel4 = {img:"img/casos/hoteles/elgranescape.png",url:"El gran escape",img2:"img/flag-cr.png"}
+const hotel5 = {img:"img/casos/hoteles/finca-luna-nueva-lodge.png",url:"agualcas.com",img2:"img/flag-cr.png"}
+const hotel6 = {img:"img/casos/hoteles/las-colinas.png",url:"las-colinas",img2:"img/flag-cr.png"}
+const hoteles1 = [hotel1,hotel2,hotel3]
+const hoteles2 = [hotel4,hotel5,hotel6]
+const item = {item1: hoteles1,item2: hoteles2}
+var items = [item,item]
+
+function itemsF(ite,index){
+  var x = `<div class="item" data-hash="${'i'+index}">
+    <div class="columns">
+      ${casos(ite.item1)}
+    </div>
+    <div class="columns">
+      ${casos(ite.item2)}
+    </div>
+  </div>`
+  return x
+}
+
+function casos(vak){
+  let x = ""
+  for (let i = 0; i < vak.length; i++) {
+    const val = vak[i]
+    x += `
+    <div class="column casos-item">
+      <div class="flex-center">
+        <img class="img-item" src="${val.img}">
+      </div>
+      <div class="flex-center">
+        <p>${val.url}</p>
+      </div>
+      <div class="flex-center">
+        <img class="img-cr" src="${val.img2}">
+      </div>
+    </div>`
+  }
+  return x
+}
+let ret = ""
+for (let i = 0; i < items.length; i++) {
+  const x = items[i]
+  ret += itemsF(x,i)
+}
+$("#imgs").html(ret)
+$(".casos").click(function(){
+  $(".casos").removeClass("active");
+  $(this).addClass("active");
+})

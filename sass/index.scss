@@ -66,3 +66,8 @@ textarea{ height: 115px; }
   @include textos(2em,bold,#1d1d1d,1.03);
   opacity: .76;
 }
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
