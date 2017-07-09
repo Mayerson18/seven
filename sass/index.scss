@@ -65,9 +65,23 @@ textarea{ height: 115px; }
 .productos{
   @include textos(2em,bold,#1d1d1d,1.03);
   opacity: .76;
+  margin-bottom: 1em;
 }
 
 .flex-center{
   display: flex;
   justify-content: center;
+}
+
+#imgs{
+  margin-bottom: 5em;
+}
+
+.current2{
+  color: #aaaaaa;
+}
+
+.logo-blue{
+  width: 147px!important;
+  height: 58px;
 }

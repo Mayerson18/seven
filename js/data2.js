@@ -1,17 +1,73 @@
 "use strict";
-var operaciones = ["Operaciones sobre Habitaciones","Operaciones sobre Folios","Reservas"]
-var titulo = "FRONT DESK"
-var texto = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
-var imagen1 = "img/l2.png"
+var operaciones1 = ["Operaciones sobre Habitaciones","Operaciones sobre Folios","Reservas"]
+var operaciones2 = [""]
+var operaciones3 = [""]
+var operaciones4 = ["Asientos Contables","Catálogo de Cuentas","Conciliación Bancaria","Extracto de Cuentas","Manejo de Presupuestos"]
+var operaciones5 = [""]
+var operaciones6 = ["Informe de Ventas","Mapa de Mesas","Selección de cuentas contables para enlaces"]
+var operaciones7 = ["Control de cuentas por cobrar y pagar por empleado.","Histórico por planillas."]
+var operaciones8 = [""]
+var operaciones9 = ["Configuración de áreas para los activos.","Inventario de Activos Fijos","Traslado de Activos"]
+var operaciones10 = ["Selección de permisos por usuario, opción por opción en cada uno de los módulos.","Histórico de movimientos de los usuarios en los módulos."]
+var operaciones11 = [""]
+var operaciones12 = ["Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.","Integración de contrato con Seven Front Desk.","Administración de logos e imágenes promocionales."]
+var titulo1 = "FRONT DESK"
+var titulo2 = "DECISIONES SUPPORT SYSTEM"
+var titulo3 = "COMUNICATION"
+var titulo4 = "ACCOUNTING"
+var titulo5 = "TOR OPERATION"
+var titulo6 = "POINT OF SALES BILLING"
+var titulo7 = "PAYROLL"
+var titulo8 = "MULTIPROPERTY"
+var titulo9 = "FIXED ASSET"
+var titulo10 = "MANAGEMENT"
+var titulo11 = "MAIL SERVICE"
+var titulo12 = "ONLINE RESERVATION"
+var n = "</p><p class='content-body'>"
+var texto1 = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
+var texto2 = ""
+var texto3 = ""
+var texto4 = "Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multi-moneda y manejo de varias empresas contables."
+var texto5 = ""
+var texto6 = `El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta.${n}Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta.`
+var texto7 = `Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla.`
+var texto8 = ``
+var texto9 = `El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos.`
+var texto10 = `El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios.`
+var texto11 = ``
+var texto12 = `Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk.`
+var imagen1 = "img/productos/front.png"
 var imagen2 = "img/img1.png"
-var obj = {
-            title:titulo,
-            text:texto,
+var imagen3 = "img/img1.png"
+var imagen4 = "img/productos/accounting.png"
+var imagen5 = "img/img1.png"
+var imagen6 = "img/productos/point.png"
+var imagen7 = "img/productos/payroll.png"
+var imagen8 = "img/img1.png"
+var imagen9 = "img/productos/fixed.png"
+var imagen10 = "img/productos/management.png"
+var imagen11 = "img/img1.png"
+var imagen12 = "img/productos/online.png"
+var img_aux = "img/img1.png"
+var obj1 = {
+            title:titulo1,
+            text:texto1,
             img1:imagen1,
-            img2:imagen2,
-            ops:operaciones//ARRAY DE CADENAS DE TEXTO
+            img2:img_aux,
+            ops:operaciones1//ARRAY DE CADENAS DE TEXTO
           }
-var json = [obj,obj]
+var obj2 = {title:titulo2,text:texto2,img1:imagen2,img2:img_aux,ops:operaciones2}
+var obj3 = {title:titulo3,text:texto3,img1:imagen3,img2:img_aux,ops:operaciones3}
+var obj4 = {title:titulo4,text:texto4,img1:imagen4,img2:img_aux,ops:operaciones4}
+var obj5 = {title:titulo5,text:texto5,img1:imagen5,img2:img_aux,ops:operaciones5}
+var obj6 = {title:titulo6,text:texto6,img1:imagen6,img2:img_aux,ops:operaciones6}
+var obj7 = {title:titulo7,text:texto7,img1:imagen7,img2:img_aux,ops:operaciones7}
+var obj8 = {title:titulo8,text:texto8,img1:imagen8,img2:img_aux,ops:operaciones8}
+var obj9 = {title:titulo9,text:texto9,img1:imagen9,img2:img_aux,ops:operaciones9}
+var obj10 = {title:titulo10,text:texto10,img1:imagen10,img2:img_aux,ops:operaciones10}
+var obj11 = {title:titulo11,text:texto11,img1:imagen11,img2:img_aux,ops:operaciones11}
+var obj12 = {title:titulo12,text:texto12,img1:imagen12,img2:img_aux,ops:operaciones12}
+var json = [obj1,obj2,obj3,obj4,obj5,obj6,obj7,obj8,obj9,obj10,obj11,obj12]
 
 let result = ""
 for (let i = 0; i < json.length; i++) {
@@ -43,11 +99,11 @@ function products(title,text,img1,img2,operations,index){
       <p class="content-body">${text}</p>\
       <div class="columns">\
         <div class="column is-4">\
-          <h4 class="content-sub-title">Algunas Funcioneas</h4>\
+          <h4 class="content-sub-title">Algunas Funciones</h4>\
           <ul id="function">\
             ${op(operations)}\
           </ul>\
-          <div class="boton-products">SOLICITA MAS INFORMACIÓN</div>\
+          <div class="flex-center"> <div class="boton-products">SOLICITA MAS INFORMACIÓN</div></div>\
         </div>\
         <div class="column">\
           <img class="img" src="${img2}" width="100%" data-index="0" data-img='["img/img1.png","img/l2.png"]'>\

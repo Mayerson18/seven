@@ -25,7 +25,7 @@ $a.hover( function(e){
 $b = $(".function");
 $b.hover( function(e){//mouseenter
   e.preventDefault();
-  $(this).addClass("current");
+  $(this).addClass("current2");
   var i = 0;
   var x = $(".active").find(".img");
   var index = parseInt(x.data("index"));
@@ -33,7 +33,7 @@ $b.hover( function(e){//mouseenter
   i = (index>=img.length) ? 0 : index;
   animation(x,img,i);
 },function(){//mouseout
-  $(this).removeClass("current")
+  $(this).removeClass("current2")
 });
 
 function animation(x,img,i){
