@@ -58,8 +58,10 @@ textarea{ height: 115px; }
 }
 
 .function{
-  color: $rojo;
   font-size: em(14px);
+  &>a{
+    color: #1d1d1d;
+  }
 }
 
 .productos{
@@ -77,8 +79,14 @@ textarea{ height: 115px; }
   margin-bottom: 5em;
 }
 
+.back{
+  @extend #imgs;
+}
+
 .current2{
-  color: #aaaaaa;
+  &>a{
+    color: $rojo!important;
+  }
 }
 
 .logo-blue{
