@@ -13,9 +13,12 @@
   </head>
 </html>
 <body>
-  <div class="barra">
-    <div class="col-xs-2"></div>
+  <div class="nav aparecer">
+    <div class="nav-toggle"><span></span><span></span><span></span></div>
+    <div class="nav-item nav-pro">PRODUCTOS    </div>
+    <div class="nav-right nav-menu"><a href="#0" class="nav-item">FRONT DESK</a><a href="#1" class="nav-item">DECISIONES SUPPORT SYSTEM</a><a href="#2" class="nav-item">COMUNICATION</a><a href="#3" class="nav-item">ACCOUNTING</a><a href="#4" class="nav-item">TOUR OPERATION</a><a href="#5" class="nav-item">POINT OF SALES BILLING</a><a href="#6" class="nav-item">PAYROLL</a><a href="#7" class="nav-item">MULTIPROPERTY</a><a href="#8" class="nav-item">FIXED ASSET</a><a href="#9" class="nav-item">MANAGEMENT</a><a href="#10" class="nav-item">MAIL SERVICE</a><a href="#11" class="nav-item">ONLINE RESERVATION</a></div>
   </div>
+  <div class="barra desaparecer"></div>
   <div class="items-fondo"><img src="img/fondo.png" class="img-fondo">
     <div class="texto-fondo">My Seven Suite es un Software superior, Realice una mejor gestion de su Hotel o Resort</div>
     <div class="boton-fondo">SOLICITA MAS INFORMACIÓN</div>
@@ -23,8 +26,8 @@
   <div class="fondo"></div><br><br>
   <div class="columns plr-3em">
     <div class="is-3 column">
-      <h2 class="productos">Nuestros Productos</h2>
-      <nav>
+      <h2 class="productos desaparecer">Nuestros Productos</h2>
+      <nav class="desaparecer">
         <ul>
           <li class="li current"><a data-id="0" href="#0" class="a">FRONT DESK</a></li>
           <li class="li"><a data-id="1" href="#1" class="a">DECISIONES SUPPORT SYSTEM</a></li>
@@ -46,7 +49,7 @@
         <!--include productos.pug.jade-->
       </div>
     </div>
-  </div><img src="img/modulos.png" width="100%">
+  </div><img src="img/modulos.png" width="100%" class="desaparecer">
   <div class="center">
     <div class="mas">Mas de <strong>100</strong> Clientes Felices</div>
   </div>

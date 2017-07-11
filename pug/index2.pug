@@ -41,9 +41,30 @@ include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
     link(rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css")
 body
-  
-  .barra
-    .col-xs-2
+  .nav.aparecer
+    
+    .nav-toggle
+      span
+      span
+      span
+    
+    div.nav-item.nav-pro PRODUCTOS    
+    
+    .nav-right.nav-menu
+      a.nav-item(href="#0")="FRONT DESK"
+      a.nav-item(href="#1")="DECISIONES SUPPORT SYSTEM"
+      a.nav-item(href="#2")="COMUNICATION"
+      a.nav-item(href="#3")="ACCOUNTING"
+      a.nav-item(href="#4")="TOUR OPERATION"
+      a.nav-item(href="#5")="POINT OF SALES BILLING"
+      a.nav-item(href="#6")="PAYROLL"
+      a.nav-item(href="#7")="MULTIPROPERTY"
+      a.nav-item(href="#8")="FIXED ASSET"
+      a.nav-item(href="#9")="MANAGEMENT"
+      a.nav-item(href="#10")="MAIL SERVICE"
+      a.nav-item(href="#11")="ONLINE RESERVATION"
+        
+  .barra.desaparecer
   .items-fondo
     img.img-fondo(src="img/fondo.png")
     .texto-fondo My Seven Suite es un Software superior, Realice una mejor gestion de su Hotel o Resort
@@ -54,8 +75,8 @@ body
   br
   .columns.plr-3em
     .is-3.column
-      h2.productos Nuestros Productos
-      nav
+      h2.productos.desaparecer Nuestros Productos
+      nav.desaparecer
         ul
           each val, index in lis
             +lis(index,val)
@@ -63,7 +84,7 @@ body
       .owl-carousel#data-json2.carrusel
         //include productos.pug.jade
 
-  img(src="img/modulos.png" width="100%")
+  img.desaparecer(src="img/modulos.png" width="100%")
   .center
     .mas Mas de #[strong 100] Clientes Felices
     

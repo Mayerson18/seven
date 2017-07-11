@@ -99,9 +99,25 @@ textarea{ height: 115px; }
     padding: 0px;
   }
 }
+.nav-pro{
+  z-index: -1;
+  justify-content: center;
+  position: relative;
+  top: -3em;
+}
+.aparecer{
+  display: none;
+}
 
 @media(max-width:768px){
+
   .desaparecer{
     display: none;
+  }
+  .aparecer{
+    display: inherit;
+  }
+  .item{
+    padding: 0px;
   }
 }

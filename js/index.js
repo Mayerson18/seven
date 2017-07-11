@@ -1,5 +1,26 @@
 //index
 
+$(".nav-toggle").click(function() {
+  if($(this).hasClass("is-active")){
+    $(this).removeClass("is-active")
+  }else{
+    $(this).addClass("is-active")
+  }
+  if($(".nav-menu").hasClass("is-active")){
+    $(".nav-menu").removeClass("is-active");
+    $(".nav-menu").children().removeClass("r");
+  }else{
+    $(".nav-menu").addClass("is-active");
+    $(".nav-menu").children().addClass("r");
+  }
+});
+
+$(".nav-item").click(function() {
+  $(".nav-menu").removeClass("is-active")
+  $(".nav-toggle").removeClass("is-active")
+  $(window).scrollTop(500)
+});
+
 $o = $(".oval");
 $o.hover( function(e){
   e.preventDefault();
