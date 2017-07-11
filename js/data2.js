@@ -15,7 +15,7 @@ var titulo1 = "FRONT DESK"
 var titulo2 = "DECISIONES SUPPORT SYSTEM"
 var titulo3 = "COMUNICATION"
 var titulo4 = "ACCOUNTING"
-var titulo5 = "TOR OPERATION"
+var titulo5 = "TOUR OPERATION"
 var titulo6 = "POINT OF SALES BILLING"
 var titulo7 = "PAYROLL"
 var titulo8 = "MULTIPROPERTY"
@@ -98,7 +98,7 @@ function products(title,text,img1,img2,operations,index){
       </div>\
       <p class="content-body">${text}</p>\
       <div class="columns">\
-        <div class="column is-4">\
+        <div class="column is-4 desaparecer">\
           <h4 class="content-sub-title">Algunas Funciones</h4>\
           <ul id="function">\
             ${op(operations)}\
@@ -129,11 +129,11 @@ var items = [item,item]
 
 function itemsF(ite,index){
   var x = `<div class="item" data-hash="${'i'+index}">
-    <div class="columns">
-      ${casos(ite.item1)}
-    </div>
-    <div class="columns">
-      ${casos(ite.item2)}
+    <div class="owl-carousel owl-theme coki2">
+
+        ${casos(ite.item1)}
+        ${casos(ite.item2)}
+
     </div>
   </div>`
   return x
@@ -144,7 +144,7 @@ function casos(vak){
   for (let i = 0; i < vak.length; i++) {
     const val = vak[i]
     x += `
-    <div class="column casos-item">
+    <div class="item casos-item">
       <div class="flex-center">
         <img class="img-item" src="${val.img}">
       </div>

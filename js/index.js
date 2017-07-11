@@ -1,4 +1,5 @@
 //index
+
 $o = $(".oval");
 $o.hover( function(e){
   e.preventDefault();
@@ -6,11 +7,70 @@ $o.hover( function(e){
   x[0].click();
 });
 
-$('.owl-carousel').owlCarousel({
+$('#imgs').owlCarousel({
   items: 1,
   margin: 0,
   URLhashListener:true,
   startPosition: 'URLHash'
+});
+
+$('#data-json2').owlCarousel({
+  items: 1,
+  margin: 0,
+  autoHeight: true,
+  URLhashListener:true,
+  startPosition: 'URLHash'
+});
+
+$('#carrusel').owlCarousel({
+  items: 1,
+  margin: 0,
+  autoHeight: true,
+  URLhashListener:true,
+  startPosition: 'URLHash'
+});
+
+$('.coki').owlCarousel({
+  items: 1,
+  margin: 0,
+  dots: false,
+  responsiveClass: true,
+  responsive:{
+       0:{
+           items:1,
+           nav:true
+       },
+       600:{
+           items:3,
+           nav:true
+       },
+       1000:{
+           items:9,
+           nav:false,
+           loop:false
+       }
+   }
+});
+
+$('.coki2').owlCarousel({
+  items: 1,
+  margin: 0,
+  responsiveClass: true,
+  responsive:{
+       0:{
+           items:1,
+           nav:true
+       },
+       600:{
+           items:3,
+           nav:true
+       },
+       1000:{
+           items:6,
+           nav:false,
+           loop:false
+       }
+   }
 });
 
 //index2

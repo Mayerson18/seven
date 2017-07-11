@@ -93,3 +93,15 @@ textarea{ height: 115px; }
   width: 147px!important;
   height: 58px;
 }
+
+.coki{
+  &>.owl-stage-outer>.owl-stage>.owl-item>.item{
+    padding: 0px;
+  }
+}
+
+@media(max-width:768px){
+  .desaparecer{
+    display: none;
+  }
+}

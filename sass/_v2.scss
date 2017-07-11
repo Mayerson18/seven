@@ -15,6 +15,7 @@
 .row{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .mas{
@@ -76,7 +77,8 @@
   }
 }
 .img-cr{
-  width: 56px!important;
+  width: 40px!important;
+  height: 25px;
 }
 .img-item{
   max-width: 150px;

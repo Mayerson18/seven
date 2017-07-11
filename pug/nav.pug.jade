@@ -1,12 +1,12 @@
 -var items = ["INVENTORY","FRONT DESK","ACCOUNTING","POINT OF SALES","PAYROLL","FIXED ASSET","MANAGEMENT","COMUNICATION","TOUR OPERATION"]
 mixin navs(val,index)
-  .column.center
+  .item.center
     a.none(href="#{'#'+index}")
-    .oval(class="l#{index}",data-id="#{index}") 
+    .oval(class="l#{index}",data-id="#{index}")
       img.log(src="img/logo#{index + 1}.png")
     p(class="p#{index}") #{val}
 
 br
-.columns
+.owl-carousel.coki.owl-theme
   each val,index in items
     +navs(val,index)
