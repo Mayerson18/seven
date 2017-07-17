@@ -1,4 +1,6 @@
 //index
+$(document).ready(function() {
+
 
 $(".nav-toggle").click(function() {
   if($(this).hasClass("is-active")){
@@ -129,3 +131,13 @@ function animation(x,img,i){
     });
   });
 }
+
+
+  $(".owl-next").click(function(){
+    $(".owl-item.active").find('.item').find("a")[0].click();
+  });
+
+  $(".owl-prev").click(function(){
+    $(".owl-item.active").find('.item').find("a")[0].click();
+  });
+});
