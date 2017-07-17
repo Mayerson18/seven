@@ -64,13 +64,12 @@ body
       a.nav-item(href="#10")="MAIL SERVICE"
       a.nav-item(href="#11")="ONLINE RESERVATION"
         
-  .barra.desaparecer
-  .items-fondo
-    img.img-fondo(src="img/fondo.png")
-    .texto-fondo My Seven Suite es un Software superior, Realice una mejor gestion de su Hotel o Resort
-    .boton-fondo SOLICITA MAS INFORMACIÓN
-    
+  include navbar.pug.jade
+  +navigation("desaparecer")
   .fondo
+    .in-fondo 
+      p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
+      a.button Solicita Mas Información
   br
   br
   .columns.plr-3em

@@ -26,15 +26,12 @@ include header.pug.jade
     link(rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css")
 body
   
-  .barra
-    .col-xs-2
-  .items-fondo
-    img.img-fondo(src="img/fondo.png")
-    .texto-fondo My Seven Suite es un Software superior, Realice una mejor gestion de su Hotel o Resort
-    .boton-fondo SOLICITA MAS INFORMACIÓN
-    
+  include navbar.pug.jade
+  +navigation("")
   .fondo
-          
+    .in-fondo 
+      p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
+      a.button Solicita Mas Información
   include nav.pug.jade
   include carrusel.pug.jade
   br  

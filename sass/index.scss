@@ -123,4 +123,12 @@ textarea{ height: 115px; }
   .post-contact{
     flex-wrap: wrap!important;
   }
+  .owl-item{
+    overflow: hidden;
+  }
+  .in-fondo{
+    font-size: 1.5em!important;
+    //display: block!important;
+    width: 100%!important;
+  }
 }

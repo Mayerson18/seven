@@ -1,0 +1,16 @@
+mixin as()
+  each val in ["Integración","Nuestros Productos","Contactenos"]
+    a.nav-item #{val}
+  
+mixin navigation(className)
+  nav.nav.nav1(class="#{className}")
+    .nav-left
+      a.nav-item
+        img(src="img/logo.png",alt="Atis",class="img-logo")
+        
+    span.nav-toggle
+      each val in [1, 2, 3]
+        span
+    
+    .nav-right.nav-menu.space
+      +as()
