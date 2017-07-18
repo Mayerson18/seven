@@ -14,6 +14,8 @@
 
 .input:focus{ border-color: $rojo; }
 
+.input{ height: 3em;}
+
 .box-contact{
   position: absolute;
   height: 495px;
@@ -30,6 +32,7 @@
   &> form >button,textarea{
     width: 90%;
     height: em(48px);
+    margin-top: 2em!important;
   }
 }
 
