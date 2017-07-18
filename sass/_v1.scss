@@ -54,6 +54,7 @@
 .p-change{
   opacity: 0.9;
   @include textos(1em,normal,$blanco2,1.44);
+  margin-top: 10px;
 }
 
 .h3-change{
