@@ -59,6 +59,7 @@
 
 .h3-change{
   @include textos(2em,normal!important,$h3,1.44);
+  color: #464646!important;
   opacity: .6;
 }
 
