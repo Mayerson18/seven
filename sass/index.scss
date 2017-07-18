@@ -81,6 +81,12 @@ textarea{ height: 115px; }
 
 .back{
   @extend #imgs;
+  height: 400px;
+}
+
+.f-img{
+  position: relative;
+  top: 2em;
 }
 
 .current2{

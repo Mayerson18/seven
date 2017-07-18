@@ -35,7 +35,7 @@ mixin item(f,img,img2,title,p1,p2,box)
         each val in p2
           p.p-change #{val}
       .column
-        img(src="#{img2}")
+        img.f-img(src="#{img2}")
   .columns.plr-3em.desaparecer
     each val in box
       +box(val.img,val.title,val.text)
