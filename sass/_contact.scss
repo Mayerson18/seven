@@ -12,19 +12,24 @@
   }
 }
 
+.input:focus{ border-color: $rojo; }
+
 .box-contact{
-  position: relative;
-  top: 10em;
+  position: absolute;
+  height: 495px;
+  left: 50%;
   min-width: 260px!important;
-  width: 60%;
-  height: 368px;
+  width: 46%;
   background-color: $blanco;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   border-radius: 23px;
-  & > form > input, textarea, button{
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 1.5em;
+  padding-left: 5%;
+  &> form >.field{
+    width: 90%;
+  }
+  &> form >button,textarea{
+    width: 90%;
+    height: em(48px);
   }
 }
 
@@ -34,7 +39,6 @@
   color: $blanco;
   font-size: em(18px);
   font-weight: bold;
-  height: em(48px);
   margin-top: 0px!important;
   cursor: pointer;
 }

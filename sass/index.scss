@@ -7,6 +7,8 @@
 @import "v2";
 @import "contact";
 
+.w-full{ width: 100%!important}
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
@@ -142,4 +144,8 @@ textarea{ height: 115px; }
   .back{
     background-image: inherit!important;
   }
+}
+
+.relative{
+  position: relative;
 }
