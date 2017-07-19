@@ -1,5 +1,7 @@
 @media(max-width:768px){
 
+  .owl-item{ padding: 0px!important; }
+
   .item{ padding: 0px!important; }
 
   .items-fondo{ left: 0px!important;  }
@@ -23,7 +25,7 @@
 
     .desaparecer{ display: none; }
 
-    .aparecer{ display: inherit; }
+    .aparecer{ display: inherit!important; }
 
     .item{ padding: 0px; }
 
