@@ -141,7 +141,7 @@ const box_fixed = [
     text: p2
   }, {
     img: "img/fa3.png",
-    title: "Afectaciones",
+    title: "Grupo de Activos",
     text: p2
   }
 ]
@@ -153,7 +153,7 @@ const box_management = [
     text: p2
   }, {
     img: "img/mana2.png",
-    title: "Permmisos de Usuarios",
+    title: "Permisos de Usuarios",
     text: p2
   }, {
     img: "img/mana3.png",
