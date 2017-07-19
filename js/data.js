@@ -49,7 +49,7 @@ const p2_online = [
   "Administración de logos e imágenes promocionales. "
 ]
 const img = "img/compras.png"
-const p2 = "asmdmasdmsalmdklsamkldsankldnsandlkasnlkdnasslkv  asmkldnklasndkasndnsaklndklsankl"
+const p2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in iaculis neque. Mauris consectetur leo ipsum, eget porttitor metus porta ac. Donec in massa eget lectus aliquet vulputate"
 const box_inventory = [
   {
     img: "img/inv1.png",
@@ -278,7 +278,7 @@ function Item(f, img, img2, title, p1, p2, box) {
         </div>\
       </div>\
   </div>\
-  <div class="columns plr-3em desaparecer">\
+  <div class="columns desaparecer">\
     ${Boxs(box)}\
   </div>\
   `
