@@ -278,7 +278,7 @@ function Item(f, img, img2, title, p1, p2, box) {
         </div>\
       </div>\
   </div>\
-  <div class="columns desaparecer">\
+  <div class="columns plr-3em desaparecer">\
     ${Boxs(box)}\
   </div>\
   `
