@@ -51,28 +51,28 @@ body
     div.nav-item.nav-pro PRODUCTOS    
     
     .nav-right.nav-menu
-      a.nav-item(href="#0")="FRONT DESK"
-      a.nav-item(href="#1")="DECISIONES SUPPORT SYSTEM"
-      a.nav-item(href="#2")="COMUNICATION"
-      a.nav-item(href="#3")="ACCOUNTING"
-      a.nav-item(href="#4")="TOUR OPERATION"
-      a.nav-item(href="#5")="POINT OF SALES BILLING"
-      a.nav-item(href="#6")="PAYROLL"
-      a.nav-item(href="#7")="MULTIPROPERTY"
-      a.nav-item(href="#8")="FIXED ASSET"
-      a.nav-item(href="#9")="MANAGEMENT"
-      a.nav-item(href="#10")="MAIL SERVICE"
-      a.nav-item(href="#11")="ONLINE RESERVATION"
+      a.nav-item.nav-item2(href="#0")="FRONT DESK"
+      a.nav-item.nav-item2(href="#1")="DECISIONES SUPPORT SYSTEM"
+      a.nav-item.nav-item2(href="#2")="COMUNICATION"
+      a.nav-item.nav-item2(href="#3")="ACCOUNTING"
+      a.nav-item.nav-item2(href="#4")="TOUR OPERATION"
+      a.nav-item.nav-item2(href="#5")="POINT OF SALES BILLING"
+      a.nav-item.nav-item2(href="#6")="PAYROLL"
+      a.nav-item.nav-item2(href="#7")="MULTIPROPERTY"
+      a.nav-item.nav-item2(href="#8")="FIXED ASSET"
+      a.nav-item.nav-item2(href="#9")="MANAGEMENT"
+      a.nav-item.nav-item2(href="#10")="MAIL SERVICE"
+      a.nav-item.nav-item2(href="#11")="ONLINE RESERVATION"
         
   include navbar.pug.jade
-  +navigation("desaparecer")
+  +navigation("desaparecer","#imagen")
   .fondo
     .in-fondo 
       p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
       a.button Solicita Mas Información
   br
   br
-  img.desaparecer(src="img/modulos.png" width="100%")
+  img.desaparecer(src="img/modulos.png" width="100%" id="imagen")
   .columns.plr-3em
     .is-3.column
       h2.productos.desaparecer Nuestros Productos

@@ -17,10 +17,13 @@ $(".nav-toggle").click(function() {
   }
 });
 
+$(".nav-item2").click(function() {
+  $(window).scrollTop(560);
+});
+
 $(".nav-item").click(function() {
   $(".nav-menu").removeClass("is-active")
   $(".nav-toggle").removeClass("is-active")
-  $(window).scrollTop(500)
 });
 
 $o = $(".oval");

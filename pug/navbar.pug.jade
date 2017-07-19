@@ -1,8 +1,10 @@
-mixin as()
-  each val in ["Integración","Nuestros Productos","Contactenos"]
-    a.nav-item #{val}
-  
-mixin navigation(className)
+mixin as(x)
+  each val,index in ["Integración","Nuestros Productos","Contactenos"]
+    if(index === 0)
+      a.nav-item(href="#{x}") #{val}
+    else
+      a.nav-item(href="#") #{val}
+mixin navigation(className,url)
   nav.nav.nav1(class="#{className}")
     .nav-left
       a.nav-item(href="index.html")
@@ -13,4 +15,4 @@ mixin navigation(className)
         span
     
     .nav-right.nav-menu.space
-      +as()
+      +as(url)
