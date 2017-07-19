@@ -252,10 +252,10 @@ function Boxs(x){
   return ret
 }
 
-function It(x){
+function It(x,x2){
   let ret=""
   for (let i = 0; i < x.length; i++) {
-    ret+=`<p class="p-change">${x[i]}</p>`
+    ret+=`<p class="p-change${x2}">${x[i]}</p>`
   }
   return ret
 }
@@ -264,13 +264,13 @@ function Item(f, img, img2, title, p1, p2, box) {
   let ret = `<div class="img-center">\
       <img id="log" src="${img}">\
   </div>\
-  ${It(p1)}\
+  ${It(p1,"2")}\
   <br>\
   <div class="back ${f}">\
       <div class="columns">\
         <div class="column">\
           <h3 class="h3-change">${title}</h3>\
-          ${It(p2)}\
+          ${It(p2,"")}\
         </div>\
         <div class="column">\
           <img class="f-img" src="${img2}">\

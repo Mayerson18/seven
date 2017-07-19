@@ -8,18 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="sass/index.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.carousel.css">
     <link rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css">
   </head>
 </html>
 <body>
-  <div class="nav aparecer">
-    <div class="nav-toggle"><span></span><span></span><span></span></div>
-    <div class="nav-item nav-pro">PRODUCTOS    </div>
-    <div class="nav-right nav-menu"><a href="#0" class="nav-item">FRONT DESK</a><a href="#1" class="nav-item">DECISIONES SUPPORT SYSTEM</a><a href="#2" class="nav-item">COMUNICATION</a><a href="#3" class="nav-item">ACCOUNTING</a><a href="#4" class="nav-item">TOUR OPERATION</a><a href="#5" class="nav-item">POINT OF SALES BILLING</a><a href="#6" class="nav-item">PAYROLL</a><a href="#7" class="nav-item">MULTIPROPERTY</a><a href="#8" class="nav-item">FIXED ASSET</a><a href="#9" class="nav-item">MANAGEMENT</a><a href="#10" class="nav-item">MAIL SERVICE</a><a href="#11" class="nav-item">ONLINE RESERVATION</a></div>
-  </div>
-    <nav class="nav nav1 desaparecer">
-      <div class="nav-left"><a class="nav-item"><img src="img/logo.png" alt="Atis" class="img-logo"></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
+    <nav class="nav nav1">
+      <div class="nav-left"><a href="index.html" class="nav-item"><img src="img/logo.png" alt="Atis" class="img-logo"></a></div><span class="nav-toggle"><span></span><span></span><span></span></span>
       <div class="nav-right nav-menu space"><a class="nav-item">Integración</a><a class="nav-item">Nuestros Productos</a><a class="nav-item">Contactenos</a>
       </div>
     </nav>
@@ -27,50 +22,66 @@
     <div class="in-fondo"> 
       <p>My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort</p><a class="button">Solicita Mas Información</a>
     </div>
-  </div><br><br><img src="img/modulos.png" width="100%" class="desaparecer">
+  </div><br>
+  <div class="owl-carousel coki owl-theme">
+      <div class="item center"><a href="#0" class="none"></a>
+        <div data-id="0" class="oval l0"><img src="img/logo1.png" class="log"></div>
+        <p class="p0">INVENTORY</p>
+      </div>
+      <div class="item center"><a href="#1" class="none"></a>
+        <div data-id="1" class="oval l1"><img src="img/logo2.png" class="log"></div>
+        <p class="p1">FRONT DESK</p>
+      </div>
+      <div class="item center"><a href="#2" class="none"></a>
+        <div data-id="2" class="oval l2"><img src="img/logo3.png" class="log"></div>
+        <p class="p2">ACCOUNTING</p>
+      </div>
+      <div class="item center"><a href="#3" class="none"></a>
+        <div data-id="3" class="oval l3"><img src="img/logo4.png" class="log"></div>
+        <p class="p3">POINT OF SALES</p>
+      </div>
+      <div class="item center"><a href="#4" class="none"></a>
+        <div data-id="4" class="oval l4"><img src="img/logo5.png" class="log"></div>
+        <p class="p4">PAYROLL</p>
+      </div>
+      <div class="item center"><a href="#5" class="none"></a>
+        <div data-id="5" class="oval l5"><img src="img/logo6.png" class="log"></div>
+        <p class="p5">FIXED ASSET</p>
+      </div>
+      <div class="item center"><a href="#6" class="none"></a>
+        <div data-id="6" class="oval l6"><img src="img/logo7.png" class="log"></div>
+        <p class="p6">MANAGEMENT</p>
+      </div>
+      <div class="item center"><a href="#7" class="none"></a>
+        <div data-id="7" class="oval l7"><img src="img/logo8.png" class="log"></div>
+        <p class="p7">COMUNICATION</p>
+      </div>
+      <div class="item center"><a href="#8" class="none"></a>
+        <div data-id="8" class="oval l8"><img src="img/logo9.png" class="log"></div>
+        <p class="p8">TOUR OPERATION</p>
+      </div>
+  </div>
+  <!--include carrusel.pug.jade-->
+  <div id="carrusel" class="owl-carousel"></div><br><br>
   <div class="columns plr-3em">
-    <div class="is-3 column">
-      <h2 class="productos desaparecer">Nuestros Productos</h2>
-      <nav class="desaparecer">
-        <ul>
-          <li class="li current"><a data-id="0" href="#0" class="a">FRONT DESK</a></li>
-          <li class="li"><a data-id="1" href="#1" class="a">DECISIONES SUPPORT SYSTEM</a></li>
-          <li class="li"><a data-id="2" href="#2" class="a">COMUNICATION</a></li>
-          <li class="li"><a data-id="3" href="#3" class="a">ACCOUNTING</a></li>
-          <li class="li"><a data-id="4" href="#4" class="a">TOUR OPERATION</a></li>
-          <li class="li"><a data-id="5" href="#5" class="a">POINT OF SALES BILLING</a></li>
-          <li class="li"><a data-id="6" href="#6" class="a">PAYROLL</a></li>
-          <li class="li"><a data-id="7" href="#7" class="a">MULTIPROPERTY</a></li>
-          <li class="li"><a data-id="8" href="#8" class="a">FIXED ASSET</a></li>
-          <li class="li"><a data-id="9" href="#9" class="a">MANAGEMENT</a></li>
-          <li class="li"><a data-id="10" href="#10" class="a">MAIL SERVICE</a></li>
-          <li class="li"><a data-id="11" href="#11" class="a">ONLINE RESERVATION</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="column is-9">
-      <div id="data-json2" class="owl-carousel carrusel">
-        <!--include productos.pug.jade-->
-        
+    <div class="column">
+      <div class="columns is-mobile">
+        <div class="column is-3"><img src="img/avatar1.png" class="img-avatar"/><img src="img/avatar-mini1.png"/></div>
+        <div class="column">
+          <h4>Evelyn Patter</h4>
+          <p class="p-avatar">“Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anders booral literally.”</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="center">
-    <div class="mas">Mas de <strong>100</strong> Clientes Felices</div>
-  </div>
-  <ul class="casos-container">
-    <li class="casos active"><a href="#i0" class="active">Hoteles</a></li>
-    <li class="casos"><a href="#i1" class="active">Restaurantes</a></li>
-    <li class="casos"><a href="#i2" class="active">Tour Operadores</a></li>
-    <li class="casos"><a href="#i3" class="active">Comercios</a></li>
-    <li class="casos"><a href="#i4" class="active">Empresas</a></li>
-    <li class="casos"><a href="#i5" class="active">Instituciones Educativas</a></li>
-  </ul><br><br>
-  <div id="imgs" class="owl-carousel">
-    <!--each val,index in itemss
-    +items(val,index)
-            
-    -->
+    <div class="column">
+      <div class="columns is-mobile">
+        <div class="column is-3"><img src="img/avatar2.png" class="img-avatar"/><img src="img/avatar-mini2.png"/></div>
+        <div class="column">
+          <h4>Mark Harper</h4>
+          <p class="p-avatar">“Keytar McSweeney's Williamsburg, readymade leggings try-hard 90's street art letterpress hoodie occupy Wes Anders booral literally.”</p>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="pre-contact columns plr-3em relative">
     <div class="box-contact">
@@ -130,6 +141,6 @@
   </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="js/data2.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="js/data.js"></script>
 <script src="js/index.js"></script>

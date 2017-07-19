@@ -57,6 +57,11 @@
   margin-top: 10px;
 }
 
+.p-change2{
+  @extend .p-change;
+  margin-top: 1.5em!important;
+}
+
 .h3-change{
   @include textos(2em,normal!important,$h3,1.44);
   color: #464646!important;
