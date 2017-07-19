@@ -16,6 +16,7 @@ const p2_fixed = [
   "Configuración de áreas para los activos.",
   "Inventario de Activos Fijos", "Traslado de Activos"
 ]
+
 const p1_accounting = ["Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multimoneda y manejo de varias empresas contables."]
 const p2_accounting = [
   "Asientos Contables",
