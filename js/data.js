@@ -1,23 +1,22 @@
 "use strict";
-const p1_inventory = "Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"
+const p1_inventory = ["Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"]
 const p2_inventory = [
     "Control, compras,  traslado, toma física. ",
     "Órdenes y solicitudes de compra.",
     "Control de traslado entre departamentos. "
   ]
-const p1_front = "El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos."
+const p1_front = ["El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.","Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción)."]
 const p2_front = [
-    "Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción).",
     "Manejo de reservas",
     "Operaciones Sobre habitaciones",
      "Estadísticas"
    ]
-const p1_fixed = "El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos."
+const p1_fixed = ["El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos."]
 const p2_fixed = [
   "Configuración de áreas para los activos.",
   "Inventario de Activos Fijos", "Traslado de Activos"
 ]
-const p1_accounting = "Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multimoneda y manejo de varias empresas contables."
+const p1_accounting = ["Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multimoneda y manejo de varias empresas contables."]
 const p2_accounting = [
   "Asientos Contables",
   "Catálogo de Cuentas",
@@ -25,24 +24,23 @@ const p2_accounting = [
   "Extracto de Cuentas",
   "Manejo de Presupuestos"
 ]
-const p1_payroll = "Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla."
+const p1_payroll = ["Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla."]
 const p2_payroll = [
   "Control de cuentas por cobrar y pagar por empleado. ",
   "Histórico por planillas.", "Cálculos automáticos de aguinaldos, vacaciones, cesantías, entre otros."
 ]
-const p1_point = "El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. "
+const p1_point = ["El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. ","Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta."]
 const p2_point = [
-  "Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta.",
   "Informe de Ventas",
   "Mapa de Mesas",
   "Selección de cuentas contables para enlaces."
 ]
-const p1_management = "El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios."
+const p1_management = ["El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios."]
 const p2_management = [
   "Selección de permisos por usuario, opción por opción en cada uno de los módulos.",
   "Histórico de movimientos de los usuarios en los módulos."
 ]
-const p1_online = "Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk."
+const p1_online = ["Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk."]
 const p2_online = [
   "Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.",
   "Integración de contrato con Seven Front Desk.",
@@ -265,7 +263,7 @@ function Item(f, img, img2, title, p1, p2, box) {
   let ret = `<div class="img-center">\
       <img id="log" src="${img}">\
   </div>\
-  <p class="p-change">${p1}</p>\
+  ${It(p1)}\
   <br>\
   <div class="back ${f}">\
       <div class="columns">\
@@ -278,7 +276,7 @@ function Item(f, img, img2, title, p1, p2, box) {
         </div>\
       </div>\
   </div>\
-  <div class="columns plr-3em desaparecer">\
+  <div class="columns desaparecer">\
     ${Boxs(box)}\
   </div>\
   `
