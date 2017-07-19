@@ -68,15 +68,15 @@ const box_inventory = [
 
 const box_front = [
   {
-    img: "img/inv1.png",
+    img: "img/front1.png",
     title: "Estadisticas",
     text: p2
   }, {
-    img: "img/inv2.png",
+    img: "img/front2.png",
     title: "Manejo de Reserva",
     text: p2
   }, {
-    img: "img/inv3.png",
+    img: "img/front3.png",
     title: "Manejo de Habitaciones",
     text: p2
   }
@@ -148,15 +148,15 @@ const box_fixed = [
 
 const box_management = [
   {
-    img: "img/fa1.png",
+    img: "img/mana1.png",
     title: "Bitacora de Seguridad",
     text: p2
   }, {
-    img: "img/fa2.png",
+    img: "img/mana2.png",
     title: "Permmisos de Usuarios",
     text: p2
   }, {
-    img: "img/fa3.png",
+    img: "img/mana3.png",
     title: "Usuarios",
     text: p2
   }
@@ -165,7 +165,7 @@ const box_management = [
 const inventory  = {
 "background": "inventory-f",
 "logo":"img/productos/inventory.png",
-"img":img,
+"img":"img/inv.png",
 "nombre":"Inventory",
 "p1":p1_inventory,
 "p2":p2_inventory,
@@ -175,7 +175,7 @@ const inventory  = {
 const front  = {
 "background": "front-f",
 "logo":"img/productos/front.png",
-"img":img,
+"img":"img/front.png",
 "nombre":"Front Desk",
 "p1":p1_front,
 "p2":p2_front,
@@ -185,7 +185,7 @@ const front  = {
 const accounting  = {
 "background": "accounting-f",
 "logo":"img/productos/accounting.png",
-"img":img,
+"img":"img/accoun.png",
 "nombre":"Accounting",
 "p1":p1_accounting,
 "p2":p2_accounting,
@@ -195,7 +195,7 @@ const accounting  = {
 const point  = {
 "background": "point-f",
 "logo":"img/productos/point.png",
-"img":img,
+"img":"img/point.png",
 "nombre":"Point of Sales",
 "p1":p1_point,
 "p2":p2_point,
@@ -205,7 +205,7 @@ const point  = {
 const payroll  = {
 "background": "payroll-f",
 "logo":"img/productos/payroll.png",
-"img":img,
+"img":"img/pay.png",
 "nombre":"Payroll",
 "p1":p1_payroll,
 "p2":p2_payroll,
@@ -215,7 +215,7 @@ const payroll  = {
 const fixed  = {
 "background": "fixed-f",
 "logo":"img/productos/fixed.png",
-"img":img,
+"img":"img/fa.png",
 "nombre":"Point of Sales",
 "p1":p1_fixed,
 "p2":p2_fixed,
@@ -225,7 +225,7 @@ const fixed  = {
 const management  = {
 "background": "management-f",
 "logo":"img/productos/management.png",
-"img":img,
+"img":"img/mana.png",
 "nombre":"Management",
 "p1":p1_management,
 "p2":p2_management,
