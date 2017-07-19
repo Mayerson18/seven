@@ -5,7 +5,11 @@ const p2_inventory = [
     "Órdenes y solicitudes de compra.",
     "Control de traslado entre departamentos. "
   ]
+<<<<<<< Updated upstream
 const p1_front = ["El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.","Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción)."]
+=======
+const p1_front = "El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos. Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción)."
+>>>>>>> Stashed changes
 const p2_front = [
     "Manejo de reservas",
     "Operaciones Sobre habitaciones",
@@ -29,7 +33,11 @@ const p2_payroll = [
   "Control de cuentas por cobrar y pagar por empleado. ",
   "Histórico por planillas.", "Cálculos automáticos de aguinaldos, vacaciones, cesantías, entre otros."
 ]
+<<<<<<< Updated upstream
 const p1_point = ["El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. ","Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta."]
+=======
+const p1_point = "El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta."
+>>>>>>> Stashed changes
 const p2_point = [
   "Informe de Ventas",
   "Mapa de Mesas",
