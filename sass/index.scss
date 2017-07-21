@@ -58,6 +58,10 @@ textarea{ height: 115px; }
 .in-footer{
   position: relative;
   top: 26px;
+  & > img{
+    position: relative;
+    top: 5px;
+  }
 }
 
 .function{
