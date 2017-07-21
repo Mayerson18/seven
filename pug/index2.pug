@@ -41,14 +41,13 @@ include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
     link(rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css")
 body
-  .nav.aparecer
-    
+  .nav.nav2.aparecer
+    div.nav-item.nav-left
+      img(src="img/logo.png",alt="Atis",class="img-logo" height="100px")
     .nav-toggle
       span
       span
-      span
-    
-    div.nav-item.nav-pro PRODUCTOS    
+      span  
     
     .nav-right.nav-menu
       a.nav-item.nav-item2(href="#0")="FRONT DESK"
@@ -66,10 +65,17 @@ body
         
   include navbar.pug.jade
   +navigation("desaparecer","#imagen")
-  .fondo
-    .in-fondo 
-      p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
-      a.button Solicita Mas Información
+  .owl-carousel.slyder
+    .item.pad0
+      .fondo
+        .in-fondo 
+          p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
+          a.button Solicita Mas Información
+    .item.pad0
+      .fondo2
+        .in-fondo 
+          p My seven suite es un Software superior, Realice una mejor gestión de su Hotel o Resort
+          a.button Solicita Mas Información
   br
   br
   img.desaparecer(src="img/modulos.png" width="100%" id="imagen")

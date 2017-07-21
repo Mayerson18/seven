@@ -71,7 +71,7 @@ $('.coki').owlCarousel({
            nav:true
        },
        1000:{
-           items:9,
+           items:10,
            nav:false,
            loop:false
        }
@@ -135,7 +135,11 @@ function animation(x,img,i){
   });
 }
 
-
+  $('.slyder').owlCarousel({
+    items: 1,
+    margin: 0,
+    dots:true
+  });
   $(".owl-next").click(function(){
     $(".owl-item.active").find('.item').find("a")[0].click();
   });
@@ -143,4 +147,6 @@ function animation(x,img,i){
   $(".owl-prev").click(function(){
     $(".owl-item.active").find('.item').find("a")[0].click();
   });
+  $(".owl-prev").text("Atrás");
+  $(".owl-next").text("Siguiente");
 });

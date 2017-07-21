@@ -11,13 +11,13 @@
   justify-content: space-around!important;
 }
 
-.fondo{
-  height: 500px;
-  background-image: url("../img/rojo2.png");
+@mixin fondo($height,$url,$x,$y) {
+  height: $height;
+  background-image: url($url);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-position: $x;
+  background-size: $y;
   & > .in-fondo{
     display: flex;
     flex-direction: column;
@@ -31,4 +31,12 @@
       margin-top: 3em;
     }
   }
+}
+
+.fondo{
+  @include fondo(500px,"../img/rojo2.png",center,cover);
+}
+
+.fondo2{
+  @include fondo(500px,"../img/rojo2.png",inherit,inherit);
 }

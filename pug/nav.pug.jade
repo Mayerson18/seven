@@ -1,9 +1,13 @@
--var items = ["INVENTORY","FRONT DESK","ACCOUNTING","POINT OF SALES","PAYROLL","FIXED ASSET","MANAGEMENT","COMUNICATION","TOUR OPERATION"]
+-var items = ["INVENTORY","FRONT DESK","ACCOUNTING","POINT OF SALES","PAYROLL","FIXED ASSET","MANAGEMENT","COMUNICATION","TOUR OPERATION","PRODUCTO"]
 mixin navs(val,index)
   .item.center
     a.none(href="#{'#'+index}")
-    .oval(class="l#{index}",data-id="#{index}")
-      img.log(src="img/logo#{index + 1}.png")
+    if index<9
+      .oval(class="l#{index}",data-id="#{index}")
+        img.log(src="img/logo#{index + 1}.png")
+    else
+      .oval(class="l#{index}",data-id="#{index}")
+        img.log(src="img/logo#{index+1}.png")
     p(class="p#{index}") #{val}
 
 br
