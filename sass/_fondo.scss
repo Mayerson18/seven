@@ -15,7 +15,7 @@
   height: $height;
   background-image: url($url);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  //background-attachment: fixed;
   background-position: $x;
   background-size: $y;
   & > .in-fondo{
@@ -34,7 +34,7 @@
 }
 
 .fondo{
-  @include fondo(500px,"../img/rojo2.png",center,cover);
+  @include fondo(500px,"../img/Rectangle.png",center,cover);
 }
 
 .fondo2{

@@ -136,9 +136,12 @@ function animation(x,img,i){
 }
 
   $('.slyder').owlCarousel({
+    loop:true,
     items: 1,
     margin: 0,
-    dots:true
+    dots:true,
+    autoplay:true,
+    autoplayTimeout:10000
   });
   $(".owl-next").click(function(){
     $(".owl-item.active").find('.item').find("a")[0].click();
