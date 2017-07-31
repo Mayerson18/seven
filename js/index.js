@@ -72,7 +72,7 @@ $('.coki').owlCarousel({
        },
        1000:{
            items:10,
-           nav:false,
+           nav:true,
            loop:false
        }
    }

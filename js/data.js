@@ -233,7 +233,7 @@ const management  = {
 
 
 
-const json = [inventory,front,accounting,point,payroll,fixed,management]
+const json = [front,point,inventory,accounting,fixed,payroll,management]
 
 function Box(img, title, text) {
   let ret = `<div class="column is-4">\
