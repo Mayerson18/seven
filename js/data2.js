@@ -12,15 +12,15 @@ var operaciones10 = ["Selección de permisos por usuario, opción por opción en
 var operaciones11 = [""]
 var operaciones12 = ["Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.","Integración de contrato con Seven Front Desk.","Administración de logos e imágenes promocionales."]
 var titulo1 = "FRONT DESK"
-var titulo2 = "DECISIONES SUPPORT SYSTEM"
-var titulo3 = "COMUNICATION"
-var titulo4 = "ACCOUNTING"
-var titulo5 = "TOUR OPERATION"
 var titulo6 = "POINT OF SALES BILLING"
-var titulo7 = "PAYROLL"
-var titulo8 = "MULTIPROPERTY"
+var titulo4 = "ACCOUNTING"
 var titulo9 = "FIXED ASSET"
+var titulo7 = "PAYROLL"
+var titulo5 = "TOUR OPERATION"
+var titulo2 = "DECISIONES SUPPORT SYSTEM"
 var titulo10 = "MANAGEMENT"
+var titulo3 = "COMUNICATION"
+var titulo8 = "MULTIPROPERTY"
 var titulo11 = "MAIL SERVICE"
 var titulo12 = "ONLINE RESERVATION"
 var n = "</p><p class='content-body'>"
@@ -75,15 +75,15 @@ var obj1 = {
             img2:img_aux,
             ops:operaciones1//ARRAY DE CADENAS DE TEXTO
           }
-var obj2 = {title:titulo2,text:texto2,img1:imagen2,img2:img_aux2,ops:operaciones2}
-var obj3 = {title:titulo3,text:texto3,img1:imagen3,img2:img_aux3,ops:operaciones3}
-var obj4 = {title:titulo4,text:texto4,img1:imagen4,img2:img_aux4,ops:operaciones4}
-var obj5 = {title:titulo5,text:texto5,img1:imagen5,img2:img_aux5,ops:operaciones5}
-var obj6 = {title:titulo6,text:texto6,img1:imagen6,img2:img_aux6,ops:operaciones6}
-var obj7 = {title:titulo7,text:texto7,img1:imagen7,img2:img_aux7,ops:operaciones7}
-var obj8 = {title:titulo8,text:texto8,img1:imagen8,img2:img_aux8,ops:operaciones8}
-var obj9 = {title:titulo9,text:texto9,img1:imagen9,img2:img_aux9,ops:operaciones9}
-var obj10 = {title:titulo10,text:texto10,img1:imagen10,img2:img_aux10,ops:operaciones10}
+var obj2 = {title:titulo6,text:texto6,img1:imagen6,img2:img_aux6,ops:operaciones6}
+var obj3 = {title:titulo4,text:texto4,img1:imagen4,img2:img_aux4,ops:operaciones4}
+var obj4 = {title:titulo9,text:texto9,img1:imagen9,img2:img_aux9,ops:operaciones9}
+var obj5 = {title:titulo7,text:texto7,img1:imagen7,img2:img_aux7,ops:operaciones7}
+var obj6 = {title:titulo5,text:texto5,img1:imagen5,img2:img_aux5,ops:operaciones5}
+var obj7 = {title:titulo2,text:texto2,img1:imagen2,img2:img_aux2,ops:operaciones2}
+var obj8 = {title:titulo10,text:texto10,img1:imagen10,img2:img_aux10,ops:operaciones10}
+var obj9 = {title:titulo3,text:texto3,img1:imagen3,img2:img_aux3,ops:operaciones3}
+var obj10 = {title:titulo8,text:texto8,img1:imagen8,img2:img_aux8,ops:operaciones8}
 var obj11 = {title:titulo11,text:texto11,img1:imagen11,img2:img_aux11,ops:operaciones11}
 var obj12 = {title:titulo12,text:texto12,img1:imagen12,img2:img_aux12,ops:operaciones12}
 var json = [obj1,obj2,obj3,obj4,obj5,obj6,obj7,obj8,obj9,obj10,obj11,obj12]
