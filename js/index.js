@@ -141,7 +141,7 @@ function animation(x,img,i){
     margin: 0,
     dots:true,
     autoplay:true,
-    autoplayTimeout:10000
+    autoplayTimeout:6000
   });
   $(".owl-next").click(function(){
     $(".owl-item.active").find('.item').find("a")[0].click();

@@ -1,7 +1,21 @@
--var items = ["FRONT DESK","POINT OF SALES","INVENTORY","ACCOUNTING","FIXED ASSET","PAYROLL","TOUR OPERATION","DECISION SUPPORT SYSTEM","MANAGEMENT","COMUNICATIONS","MULTIPROPERTY","MAILING SERVICES","ONLINE BOOKING SYSTEM"]
-mixin navs(val,index)
+-var front = {title:"FRONT DESK",hash:"front"}
+-var point = {title:"POINT OF SALES BILLING",hash:"point"}
+-var inventory = {title:"INVENTORY",hash:"inventory"}
+-var accounting = {title:"ACCOUNTING",hash:"accounting"}
+-var fixed = {title:"FIXED ASSET",hash:"fixed"}
+-var payroll = {title:"PAYROLL",hash:"payroll"}
+-var tour = {title:"TOUR OPERATION",hash:"tour"}
+-var decision = {title:"DECISIONES SUPPORT SYSTEM",hash:"decision"}
+-var management = {title:"MANAGEMENT",hash:"management"}
+-var comunication = {title:"COMUNICATION",hash:"comunication"}
+-var multiproperty = {title:"MULTIPROPERTY",hash:"multiproperty"}
+-var mail = {title:"MAIL SERVICE",hash:"mail"}
+-var online = {title:"ONLINE RESERVATION",hash:"online"}
+-var items = [front,point,inventory,accounting,fixed,payroll,tour,decision,management,comunication,multiproperty,mail,online]
+-var items2 = ["FRONT DESK","POINT OF SALES","INVENTORY","ACCOUNTING","FIXED ASSET","PAYROLL","TOUR OPERATION","DECISION SUPPORT SYSTEM","MANAGEMENT","COMUNICATIONS","MULTIPROPERTY","MAILING SERVICES","ONLINE BOOKING SYSTEM"]
+mixin navs(val,index,hash)
   .item.center
-    a.none(href="#{'#'+index}")
+    a.none(href="#{'#'+hash}")
     if index<9
       .oval(class="l#{index}",data-id="#{index}")
         img.log(src="img/logo#{index + 1}.png")
@@ -14,4 +28,4 @@ mixin navs(val,index)
 br
 .owl-carousel.coki.owl-theme
   each val,index in items
-    +navs(val,index)
+    +navs(val.title,index,val.hash)

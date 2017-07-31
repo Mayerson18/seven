@@ -67,7 +67,7 @@ textarea{ height: 115px; }
 .function{
   font-size: em(14px);
   &>a{
-    color: #1d1d1d;
+    color: #717171;
   }
 }
 
@@ -133,3 +133,7 @@ textarea{ height: 115px; }
 .owl-prev:hover{ background-color: $rojo!important; }
 
 .pad0{ padding: 0px; }
+
+.img2-logo{
+  height: 83px;
+}

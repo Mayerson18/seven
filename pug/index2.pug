@@ -1,6 +1,19 @@
 //output:../index.html
 -var p1 = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
--var lis = ["FRONT DESK","POINT OF SALES BILLING","ACCOUNTING","FIXED ASSET","PAYROLL","TOUR OPERATION","DECISIONES SUPPORT SYSTEM","MANAGEMENT","COMUNICATION","MULTIPROPERTY","MAIL SERVICE","ONLINE RESERVATION"]
+-var front = {title:"FRONT DESK",hash:"front"}
+-var point = {title:"POINT OF SALES BILLING",hash:"point"}
+-var inventory = {title:"INVENTORY",hash:"inventory"}
+-var accounting = {title:"ACCOUNTING",hash:"accounting"}
+-var fixed = {title:"FIXED ASSET",hash:"fixed"}
+-var payroll = {title:"PAYROLL",hash:"payroll"}
+-var tour = {title:"TOUR OPERATION",hash:"tour"}
+-var decision = {title:"DECISIONES SUPPORT SYSTEM",hash:"decision"}
+-var management = {title:"MANAGEMENT",hash:"management"}
+-var comunication = {title:"COMUNICATION",hash:"comunication"}
+-var multiproperty = {title:"MULTIPROPERTY",hash:"multiproperty"}
+-var mail = {title:"MAIL SERVICE",hash:"mail"}
+-var online = {title:"ONLINE RESERVATION",hash:"online"}
+-var lis = [front,point,inventory,accounting,fixed,payroll,tour,decision,management,comunication,multiproperty,mail,online]
 -var casos = ["Hoteles","Restaurantes","Tour Operadores","Comercios","Empresas","Instituciones Educativas"]
 -var hotel1 = {img:"img/casos/hoteles/agualcas.jpg",url:"agualcas.com",img2:"img/flag-cr.png"}
 -var hotel2 = {img:"img/casos/hoteles/cano-negro.png",url:"agualcas.com",img2:"img/flag-cr.png"}
@@ -30,13 +43,13 @@ mixin casos(vak)
       .flex-center
         img.img-cr(src="#{val.img2}")
           
-mixin lis(id,text)
+mixin lis(id,text,hash)
   if id==0
     li.li.current
-      a.a(data-id="#{id}", href="#{'#'+ id}") #{text}
+      a.a(data-id="#{hash}", href="#{'#'+ hash}") #{text}
   else
     li.li
-      a.a(data-id="#{id}", href="#{'#'+ id}") #{text}
+      a.a(data-id="#{hash}", href="#{'#'+ hash}") #{text}
 include header.pug.jade
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css")
     link(rel="stylesheet" href="OwlCarousel2-2.2.1/dist/assets/owl.theme.default.min.css")
@@ -50,18 +63,8 @@ body
       span  
     
     .nav-right.nav-menu
-      a.nav-item.nav-item2(href="#0")="FRONT DESK"
-      a.nav-item.nav-item2(href="#1")="DECISIONES SUPPORT SYSTEM"
-      a.nav-item.nav-item2(href="#2")="COMUNICATION"
-      a.nav-item.nav-item2(href="#3")="ACCOUNTING"
-      a.nav-item.nav-item2(href="#4")="TOUR OPERATION"
-      a.nav-item.nav-item2(href="#5")="POINT OF SALES BILLING"
-      a.nav-item.nav-item2(href="#6")="PAYROLL"
-      a.nav-item.nav-item2(href="#7")="MULTIPROPERTY"
-      a.nav-item.nav-item2(href="#8")="FIXED ASSET"
-      a.nav-item.nav-item2(href="#9")="MANAGEMENT"
-      a.nav-item.nav-item2(href="#10")="MAIL SERVICE"
-      a.nav-item.nav-item2(href="#11")="ONLINE RESERVATION"
+      each val in lis
+        a.nav-item.nav-item2(href="#{'#'+val.hash}") #{val.title}
         
   include navbar.pug.jade
   +navigation("desaparecer","#imagen")
@@ -84,8 +87,8 @@ body
       h2.productos.desaparecer Nuestros Productos
       nav.desaparecer
         ul
-          each val, index in lis
-            +lis(index,val)
+          each val,index in lis
+            +lis(index,val.title,val.hash)
     .column.is-9
       .owl-carousel#data-json2.carrusel
         //include productos.pug.jade

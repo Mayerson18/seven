@@ -168,7 +168,8 @@ const inventory  = {
 "nombre":"Inventory",
 "p1":p1_inventory,
 "p2":p2_inventory,
-"box": box_inventory
+"box": box_inventory,
+"hash":"inventory"
 }
 
 const front  = {
@@ -178,7 +179,8 @@ const front  = {
 "nombre":"Front Desk",
 "p1":p1_front,
 "p2":p2_front,
-"box": box_front
+"box": box_front,
+"hash":"front"
 }
 
 const accounting  = {
@@ -188,7 +190,8 @@ const accounting  = {
 "nombre":"Accounting",
 "p1":p1_accounting,
 "p2":p2_accounting,
-"box": box_accounting
+"box": box_accounting,
+"hash":"accounting"
 }
 
 const point  = {
@@ -198,7 +201,8 @@ const point  = {
 "nombre":"Point of Sales",
 "p1":p1_point,
 "p2":p2_point,
-"box": box_point
+"box": box_point,
+"hash":"point"
 }
 
 const payroll  = {
@@ -208,7 +212,8 @@ const payroll  = {
 "nombre":"Payroll",
 "p1":p1_payroll,
 "p2":p2_payroll,
-"box": box_payroll
+"box": box_payroll,
+"hash":"payroll"
 }
 
 const fixed  = {
@@ -218,7 +223,8 @@ const fixed  = {
 "nombre":"Point of Sales",
 "p1":p1_fixed,
 "p2":p2_fixed,
-"box": box_fixed
+"box": box_fixed,
+"hash":"fixed"
 }
 
 const management  = {
@@ -228,7 +234,8 @@ const management  = {
 "nombre":"Management",
 "p1":p1_management,
 "p2":p2_management,
-"box": box_management
+"box": box_management,
+"hash":"management"
 }
 
 
@@ -289,7 +296,7 @@ function Items(x){
   let ret = ""
   for (let i = 0; i < x.length; i++) {
     console.log(x[i].background)
-    ret += `<div class="item" data-hash="${i}">\
+    ret += `<div class="item" data-hash="${x[i].hash}">\
     ${Item(x[i].background,x[i].logo,x[i].img,x[i].nombre,x[i].p1,x[i].p2,x[i].box)}\
   </div>`
   }
