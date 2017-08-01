@@ -64,7 +64,10 @@ textarea{ height: 115px; }
   }
 }
 
+#function{ margin: 0px;}
+
 .function{
+  padding-top: .5em;
   font-size: em(14px);
   &>a{
     color: #717171;

@@ -42,19 +42,19 @@ var imagen_multiproperty = "img/productos/multi.png"
 var imagen_mail = "img/productos/mail.png"
 var imagen_online = "img/productos/online.png"
 
-var img_aux_front = "img/img1.png"
-var img_aux_point = "img/auxpoint.png"
-var img_aux_inventory = "img/inv.png"
-var img_aux_accounting = "img/auxacou.png"
-var img_aux_fixed = "img/auxfixed.png"
-var img_aux_payroll = "img/auxpay.png"
-var img_aux_tour = "img/auxtour.png"
-var img_aux_decision = "img/auxdds.png"
-var img_aux_management = "img/auxmanag.png"
-var img_aux_comunication = "img/auxcom.png"
-var img_aux_multiproperty = "img/auxmulti.png"
-var img_aux_mail = "img/auxmail.png"
-var img_aux_online = "img/auxonline.png"
+var img_aux_front = ["img/pantallashome/front/1.png","img/pantallashome/front/2.png","img/pantallashome/front/3.png","img/pantallashome/front/4.png"]
+var img_aux_point = ["img/pantallashome/point/1.png","img/pantallashome/point/2.png","img/pantallashome/point/3.png"]
+var img_aux_inventory = ["img/pantallashome/inventory/1.png","img/pantallashome/inventory/2.png","img/pantallashome/inventory/3.png","img/pantallashome/inventory/4.png"]
+var img_aux_accounting = ["img/pantallashome/accounting/1.png","img/pantallashome/accounting/2.png","img/pantallashome/accounting/3.png","img/pantallashome/accounting/4.png"]
+var img_aux_fixed = ["img/pantallashome/fixed/1.png","img/pantallashome/fixed/2.png","img/pantallashome/fixed/3.png","img/pantallashome/fixed/4.png"]
+var img_aux_payroll = ["img/pantallashome/payroll/1.png","img/pantallashome/payroll/2.png","img/pantallashome/payroll/3.png"]
+var img_aux_tour = ["img/pantallashome/tour/1.png","img/pantallashome/tour/2.png","img/pantallashome/tour/3.png"]
+var img_aux_decision = ["img/pantallashome/DSS/1.png","img/pantallashome/DSS/2.png","img/pantallashome/DSS/3.png","img/pantallashome/DSS/4.png"]
+var img_aux_management = ["img/pantallashome/management/1.png","img/pantallashome/management/2.png","img/pantallashome/management/3.png"]
+var img_aux_comunication = ["img/pantallashome/comunication/1.png","img/pantallashome/comunication/2.png","img/pantallashome/comunication/3.png","img/pantallashome/comunication/4.png","img/pantallashome/comunication/5.png"]
+var img_aux_multiproperty = ["img/pantallashome/multiproperty/1.png","img/pantallashome/multiproperty/2.png","img/pantallashome/multiproperty/3.png","img/pantallashome/multiproperty/4.png"]
+var img_aux_mail = ["img/pantallashome/mail/1.png","img/pantallashome/mail/2.png","img/pantallashome/mail/3.png"]
+var img_aux_online = ["img/pantallashome/online/1.png","img/pantallashome/online/2.png","img/pantallashome/online/3.png","img/pantallashome/online/4.png"]
 
 var titulo_front = "FRONT DESK"
 var titulo_point = "POINT OF SALES BILLING"
@@ -143,7 +143,7 @@ function products(title,text,img1,img2,operations,index){
           <div class="flex-center"> <div class="boton-products">SOLICITA MAS INFORMACIÓN</div></div>\
         </div>\
         <div class="column">\
-          <img class="img" src="${img2}" width="100%" data-index="0" data-img='["img/img1.png","img/l2.png"]'>\
+          <img class="img" src="${img2[0]}" width="100%" data-index="0" data-img='${JSON.stringify(img2)}'>\
         </div>\
       </div>\
     </div>\
