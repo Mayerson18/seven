@@ -34,9 +34,13 @@
 }
 
 .fondo{
-  @include fondo(500px,"../img/Rectangle.png",center,cover);
+  @include fondo(500px,"../img/banner/banner1.png",center,cover);
 }
 
 .fondo2{
-  @include fondo(500px,"../img/rojo2.png",inherit,inherit);
+  @include fondo(500px,"../img/banner/banner2.png",inherit,inherit);
+}
+
+.fondo3{
+  @include fondo(500px,"../img/banner/banner3.png",inherit,inherit);
 }
