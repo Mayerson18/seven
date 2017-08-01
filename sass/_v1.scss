@@ -6,7 +6,11 @@
 .l5{border: solid 1px $c5;}
 .l6{border: solid 1px $c6;}
 .l7{border: solid 1px $c7;}
-.l8{border: solid 1px $c8;}
+.l8{border: solid 1px $c6;}
+.l9{border: solid 1px $c7;}
+.l10{border: solid 1px $c5;}
+.l11{border: solid 1px $c2;}
+.l12{border: solid 1px $c2;}
 
 .p0{color: $c0;}
 .p1{color: $c1;}
@@ -16,7 +20,16 @@
 .p5{color: $c5;}
 .p6{color: $c6;}
 .p7{color: $c7;}
-.p8{color: $c8;}
+.p8{color: $c6;}
+.p9{color: $c7;}
+.p10{color: $c5;}
+.p11{color: $c2;}
+.p12{color: $c2;}
+
+.log11,.log12{
+  left: 2px!important;
+  width: 25px;
+}
 
 .inventory-f{background-image: url("../img/productos/inventory-f.png");}
 .payroll-f{background-image: url("../img/productos/payroll-f.png");}

@@ -53,47 +53,47 @@ const box_inventory = [
   {
     img: "img/inv1.png",
     title: "Inventarios",
-    text: p2
+    text: "Inventario: Registro de tomas físicas, con múltiples criterios de selección para el grupo de artÌculos a revisar."
   }, {
     img: "img/inv2.png",
     title: "Ordenes de Compra",
-    text: p2
+    text: "Registro de solicitudes de compra de productos para su respectiva revisión y aprobación previa a realizar la compra."
   }, {
     img: "img/inv3.png",
     title: "Previsión de Compras",
-    text: p2
+    text: "Informe que pronostica cuantos productos se van a comprar en base a las compras y ordenes de compra registradas en un periodo."
   }
 ]
 
 const box_front = [
   {
     img: "img/front1.png",
-    title: "Estadisticas",
-    text: p2
+    title: "Estadísticas de Explotación",
+    text: "Informe que muestra los ingresos de hospedaje, paquetes, estancias, pax y otros en un rango de fechas por varios criterios de agrupación y detalle."
   }, {
     img: "img/front2.png",
-    title: "Manejo de Reserva",
-    text: p2
+    title: "Reservas",
+    text: "Registro de solicitudes y confirmaciones de reserva, asignación de habitaciones, control de disponibilidad."
   }, {
     img: "img/front3.png",
-    title: "Manejo de Habitaciones",
-    text: p2
+    title: "Operaciones sobre Habitaciones",
+    text: "Manejo de check-in y check-out de los huéspedes, observaciones especiales, cambios de habitación, entre otros."
   }
 ]
 
 const box_accounting = [
   {
     img: "img/accoun1.png",
-    title: "Presupuestos",
-    text: p2
+    title: "Asientos Contables",
+    text: "Registro por partida doble de movimientos contables, permite utilizar plantillas de asientos prediseñadas, agregar observaciones y definir"
   }, {
     img: "img/accoun2.png",
-    title: "Conciliaión Bancaria",
-    text: p2
+    title: "Conciliación Bancaria",
+    text: "Pantalla amigable donde se pueden conciliar las cuentas bancarias de la empresa."
   }, {
     img: "img/accoun3.png",
-    title: "Asientos Contables",
-    text: p2
+    title: "Presupuestos",
+    text: "Defina presupuestos para las cuentas en un periodo dado, para luego comprar el resultado de ese periodo con lo presupuestado."
   }
 ]
 
@@ -101,63 +101,63 @@ const box_point = [
   {
     img: "img/point1.png",
     title: "Informe de Ventas",
-    text: p2
+    text: "Reporte estadístico de las ventas en un periodo dado bajo un gran abanico de opciones de selección y agrupamiento para escoger."
   }, {
     img: "img/point2.png",
     title: "Facturación",
-    text: p2
+    text: "Carga de artículos a la comanda, envÌo de pedidos a impresoras de cocina sobre categorÌa del producto, anulaciones, devoluciones, descuentos, entre otras funciones."
   }, {
     img: "img/point3.png",
     title: "Mapa de Mesas",
-    text: p2
+    text: "Página configurable donde se pueden definir varios salones, cada uno con la distribución de las mesas. Refleja mesas libres y ocupadas, control de saloneros en las mesas."
   }
 ]
 
 const box_payroll = [
   {
     img: "img/pay1.png",
-    title: "Puestos y Categorias",
-    text: p2
+    title: "Afectaciones",
+    text: "Definición de dÌas libres, feriados, feriados de pago doble, etc."
   }, {
     img: "img/pay2.png",
-    title: "Historico de Planillas",
-    text: p2
+    title: "Puestos y categorÌas",
+    text: "Definición de los puestos en la empresa, periodos de pago, cantidad de dÌas laborables, salario mÌnimo entre otros."
   }, {
     img: "img/pay3.png",
-    title: "Afectaciones",
-    text: p2
+    title: "Histórico de Planillas",
+    text: "Consulta de planillas emitidas anteriormente con varios criterios de selección."
   }
 ]
 
 const box_fixed = [
   {
     img: "img/fa1.png",
-    title: "Salida de Activos",
-    text: p2
+    title: "Entrada de Activos",
+    text: "Registro de adquisición de activos, por compra, donación, a cuál ·rea ir·, etc."
   }, {
     img: "img/fa2.png",
-    title: "Entrada de Activos",
-    text: p2
+    title: "Salida de Activos",
+    text: "Registro de bajas de activos ya sea por venta, que se haya dañado, etc."
   }, {
     img: "img/fa3.png",
-    title: "Grupo de Activos",
-    text: p2
+    title: "Grupos de Activos",
+    text: "Configuración de grupos de activos en múltiples categorÌas."
   }
 ]
 
 const box_management = [
   {
     img: "img/mana1.png",
-    title: "Bitacora de Seguridad",
-    text: p2
+    title: "Usuarios",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
   }, {
     img: "img/mana2.png",
     title: "Permisos de Usuarios",
-    text: p2
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
   }, {
     img: "img/mana3.png",
-    title: "Usuarios",
-    text: p2
+    title: "Bitácora de Seguridad",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
   }
 ]
 
