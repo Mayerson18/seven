@@ -20,6 +20,7 @@ ul{/* Custom li*/
   padding-left: 1em;
 }
 
+
 li{ padding-left: 5px; }
 
 a{/*Custom a*/
@@ -42,7 +43,7 @@ textarea{ height: 115px; }
 
 .item{
   padding: 0px 3em;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .footer{
@@ -75,8 +76,8 @@ textarea{ height: 115px; }
 }
 
 .productos{
-  @include textos(2em,bold,#1d1d1d,1.03);
-  opacity: .76;
+  @include textos(1.8em,600,#1d1d1d,1.03);
+  opacity: .66;
   margin-bottom: 1em;
 }
 
@@ -145,4 +146,21 @@ textarea{ height: 115px; }
   margin-top: 5px;
   font-size: 13px;
   line-height: 15px;
+
+}
+
+
+.flex-center p{
+    color: #1a0dab;
+    opacity: 0.70;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.img-item{
+  opacity: 0.5 !important;
+}
+
+.img-item:hover{
+  opacity: 1 !important ;
 }

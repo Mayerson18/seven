@@ -152,12 +152,14 @@ function products(title,text,img1,img2,operations,index){
 }
 
 
-const hotel1 = {img:"img/casos/hoteles/agualcas.jpg",url:"agualcas.com",img2:"img/flag-cr.png"}
-const hotel2 = {img:"img/casos/hoteles/cano-negro.png",url:"agualcas.com",img2:"img/flag-cr.png"}
-const hotel3 = {img:"img/casos/hoteles/casa-roland-marina-golfito.png",url:"agualcas.com",img2:"img/flag-cr.png"}
-const hotel4 = {img:"img/casos/hoteles/elgranescape.png",url:"El gran escape",img2:"img/flag-cr.png"}
-const hotel5 = {img:"img/casos/hoteles/finca-luna-nueva-lodge.png",url:"agualcas.com",img2:"img/flag-cr.png"}
-const hotel6 = {img:"img/casos/hoteles/las-colinas.png",url:"las-colinas",img2:"img/flag-cr.png"}
+
+
+const hotel1 = {img:"img/casos/hoteles/The Preserve at Los Altos.png",url:"thepreserveatlosaltos.com",img2:"img/flag-cr.png"}
+const hotel2 = {img:"img/casos/hoteles/logo hotel seminole colorX.png",url:"seminoleplaza.com",img2:"img/flag-cr.png"}
+const hotel3 = {img:"img/casos/hoteles/VolcanoBN.jpg",url:"volcanolodge.com/es",img2:"img/flag-cr.png"}
+const hotel4 = {img:"img/casos/hoteles/San Bosco Inn.png",url:"hotelsanbosco.com/en/",img2:"img/flag-cr.png"}
+const hotel5 = {img:"img/casos/hoteles/Cano_Negro.png",url:"canonegrolodge.com",img2:"img/flag-cr.png"}
+const hotel6 = {img:"img/casos/hoteles/Logo Nacazcol - Final.png",url:"nacazcol.com",img2:"img/flag-cr.png"}
 const hoteles1 = [hotel1,hotel2,hotel3]
 const hoteles2 = [hotel4,hotel5,hotel6]
 const item = {item1: hoteles1,item2: hoteles2}

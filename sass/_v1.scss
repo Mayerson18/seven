@@ -90,3 +90,9 @@
 .title-avatar{
   @include textos(em(18px),normal,#393838,initial);
 }
+
+.content-body{
+  line-height: em(22px);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

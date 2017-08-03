@@ -13,6 +13,7 @@ mixin avatar(img,img2,title,text)
     h4 #{title}
     p.p-avatar #{text}
 
+
 mixin lis(id,text)
   if id==0
     li.current
@@ -27,6 +28,7 @@ include header.pug.jade
 body
   
   include navbar.pug.jade
+  +navigation("","index.html#imagen")
   +navigation("","index.html#imagen")
   .owl-carousel.slyder
     include banner.pug.jade
