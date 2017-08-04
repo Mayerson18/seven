@@ -222,9 +222,32 @@ const restaurante2 = {img:"img/casos/restaurantes/lo sabroso maiz.png",url:"http
 const restaurante3 = {img:"img/casos/restaurantes/Logo EF.jpg",url:"http://elfloriditanicaragua.com/",img2:"img/flag-cr.png"}
 const restaurantes1 = [restaurante1,restaurante2,restaurante3]
 
+const tour1 = {img:"img/casos/tours/TIMON_COLOR.JPG",url:"http://www.bayislandcruises.com/",img2:"img/flag-cr.png"}
+const tour2 = {img:"img/casos/tours/Logo_Rancho_Los_Tucanes_Rep.png",url:"http://www.tucanestours.com/",img2:"img/flag-cr.png"}
+const tours1 = [tour1,tour2]
+
+const comercio1 = {img:"img/casos/comercios/vallejo.png",url:"http://www.ferreteriavallejo.com/",img2:"img/flag-cr.png"}
+const comercio2 = {img:"img/casos/comercios/Inso.jpg",url:"http://www.insocr.com/",img2:"img/flag-cr.png"}
+const comercios1 = [comercio1,comercio2]
+
+const empresa1 = {img:"img/casos/empresas/Uniseguros.png",url:"http://www.unisegurosagencia.com/",img2:"img/flag-cr.png"}
+const empresa2 = {img:"img/casos/empresas/eco quintas.png",url:"https://www.grupoecoquintas.com/",img2:"img/flag-cr.png"}
+const empresa3 = {img:"img/casos/empresas/job solutions.png",url:"http://www.jobsolutionsca.com/",img2:"img/flag-cr.png"}
+const empresas1 = [empresa1,empresa2,empresa3]
+
+const institucion1 = {img:"img/casos/instituciones/CDS-Logo.jpg",url:"https://www.cds.ed.cr/",img2:"img/flag-cr.png"}
+const institucion2 = {img:"img/casos/instituciones/unitec.png",url:"http://www.unitec.edu.ni/",img2:"img/flag-cr.png"}
+const institucion3 = {img:"img/casos/instituciones/og_logo_ue.png",url:"https://www.earth.ac.cr/es/",img2:"img/flag-cr.png"}
+const instituciones1 = [institucion1,institucion2,institucion3]
+
 const hoteles = {item1: hoteles1}
 const restaurantes = {item1: restaurantes1}
-var items = [hoteles,restaurantes]
+const tours = {item1: tours1}
+const comercios = {item1: comercios1}
+const empresas = {item1: empresas1}
+const instituciones = {item1: instituciones1}
+
+var items = [hoteles,restaurantes,tours,comercios,empresas,instituciones]
 
 function itemsF(ite,index){
   var x = `<div class="item" data-hash="${'i'+index}">
