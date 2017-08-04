@@ -92,8 +92,8 @@ $('.coki2').owlCarousel({
            nav:true
        },
        1000:{
-           items:6,
-           nav:false,
+           items:5,
+           nav:true,
            loop:false
        }
    }
