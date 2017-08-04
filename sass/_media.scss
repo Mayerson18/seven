@@ -1,5 +1,10 @@
 @media(max-width:768px){
 
+  .img-logo{
+    width: 64px!important;
+    min-height: inherit!important;
+  }
+
   .owl-item{ padding: 0px!important; }
 
   .item{ padding: 0px!important; }

@@ -44,3 +44,7 @@
 .fondo3{
   @include fondo(500px,"../img/banner/banner3.png",inherit,inherit);
 }
+
+.fondo-aux{
+  width: 100%;
+}

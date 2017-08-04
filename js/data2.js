@@ -140,7 +140,7 @@ function products(title,text,img1,img2,operations,index){
           <ul id="function">\
             ${op(operations)}\
           </ul>\
-          <div class="flex-center"> <div class="boton-products">SOLICITA MAS INFORMACIÓN</div></div>\
+          <div class="flex-center"> <a href="${ "productos.html#" + index}" class="boton-products">SOLICITA MAS INFORMACIÓN</a></div>\
         </div>\
         <div class="column">\
           <img class="img" src="${img2[0]}" width="100%" data-index="0" data-img='${JSON.stringify(img2)}'>\

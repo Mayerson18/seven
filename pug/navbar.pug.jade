@@ -1,9 +1,10 @@
 mixin as(x)
-  each val,index in ["Integración","Nuestros Productos","Contactenos"]
+  each val,index in [{text:"Integración",url:"#"},{text:"Nuestros Productos",url:"productos.html"},{text:"Contactenos",url:"#contactenos"}]
     if(index === 0)
-      a.nav-item(href="#{x}") #{val}
+      a.nav-item(href="#{x}") #{val.text}
     else
-      a.nav-item(href="#") #{val}
+      a.nav-item(href="#{val.url}") #{val.text}
+      
 mixin navigation(className,url)
   nav.nav.nav1(class="#{className}")
     .nav-left

@@ -16,7 +16,7 @@
 mixin navs(val,index,hash)
   .item.center
     a.none(href="#{'#'+hash}")
-    .oval(class="l#{index}",data-id="#{index}")
+    .oval(class="l#{index}",data-id="#{index}" id="#{hash}")
       img.log(src="img/logo#{index + 1}.png" class="log#{index}")
     p(class="p#{index} p-nav") #{val}
 
