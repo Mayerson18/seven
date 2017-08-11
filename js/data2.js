@@ -1,22 +1,22 @@
 "use strict";
-var operaciones_front = ["Operaciones sobre Habitaciones","Operaciones sobre Folios","Reservas"]
-var operaciones_decision = [""]
-var operaciones_inventory = ["Control, compras,  traslado, toma física. ","Órdenes y solicitudes de compra.","Control de traslado entre departamentos."]
-var operaciones_comunication = [""]
-var operaciones_accounting = ["Asientos Contables","Catálogo de Cuentas","Conciliación Bancaria","Extracto de Cuentas","Manejo de Presupuestos"]
-var operaciones_tour = [""]
-var operaciones_point = ["Informe de Ventas","Mapa de Mesas","Selección de cuentas contables para enlaces"]
-var operaciones_payroll = ["Control de cuentas por cobrar y pagar por empleado.","Histórico por planillas."]
-var operaciones_multiproperty = ["Traslado de Reservas entre Hoteles", "Traslado de Huespedes entre Hoteles"]
+var operaciones_front = ["Operaciones sobre Habitaciones","Operaciones sobre Folios","Reservas" , "Disponibilidad de Habitaciones" ]
+var operaciones_decision = ["Estado de Resultados","Submayor de Artúculos","Bitácora de Seguridad","Balance General"]
+var operaciones_inventory = ["Control, compras,  traslado, toma física. ","Inventaio","Órdenes y solicitudes de compra.","Previsión de Compras."]
+var operaciones_comunication = ["Control de Llamadas","Directorio Telefénico","Extensiones","Reportes de Llamadas"]
+var operaciones_accounting = ["Asientos Contables","Catálogo de Cuentas","Conciliación Bancaria","Extracto de Cuentas"]
+var operaciones_tour = ["Reservas", "Prepagos" ,"Rutas"]
+var operaciones_point = ["Facturacion","Cobros","Mapa de Mesas","Informe de Ventas"]
+var operaciones_payroll = ["Afectaciones","Empleados","Puestos y Categorias"]
+var operaciones_multiproperty = ["Pronóstico de Ingresos","Pronósticos de Ocupación Unificados", "Traslado de Huespedes entre Hoteles"]
 var operaciones_fixed = ["Configuración de áreas para los activos.","Inventario de Activos Fijos","Traslado de Activos"]
 var operaciones_management = ["Selección de permisos por usuario, opción por opción en cada uno de los módulos.","Histórico de movimientos de los usuarios en los módulos."]
-var operaciones_mail = [""]
+var operaciones_mail = ["Previsualizador de Correos" , "Reserva al Correo"]
 var operaciones_online = ["Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.","Integración de contrato con Seven Front Desk.","Administración de logos e imágenes promocionales."]
 
 var n = "</p><p class='content-body'>"
 var texto_front = "Front Desk, con sus más de 160 opciones entre operativas,configuración y reportes, es a nivel de hoteles el más importanteentre los módulos.  Una vez configurado el Front Parámetros, estemódulo nos permite de una forma muy eficiente controlar lasoperaciones diarias con reportes muy útiles y facilidad demanipulación de grandes cantidades de información. Front Desk contiene el modulo de Front Parámetro."
 var texto_decision = "Módulo de reportería centralizado para gerentes. Permite a la gerencia acceder a los principales reportes de nuestros módulos en un mismo sitio. Entre los módulos con reportería en el DSS están Front Desk, Point of Sales, Inventory, Accounting y Management. Compatible con dispositivos móviles."
-var texto_comunication = ""
+var texto_comunication = "Tarificador de Llamadas Telefónicas Se conecta a centrales Telefónicas de Puerto Serial y por IP. Registra y tarifica la duración de las llamadas, tanto en habitaciones como en oficinas administrativas. Envía los cargos a Front Desk. Brinda varios reportes estadísticos de las llamadas."
 var texto_inventory = "Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"
 var texto_accounting = "Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multi-moneda y manejo de varias empresas contables."
 var texto_tour = "Sistema para Operadores de Tours Permite reservar varios servicios en diferentes fechas y, horas de inicio y final, todo en una misma reserva. Control de Disponibilidad por Servicio, Equipo y Recurso Humano. lexible e Intuitiva función para el control de las rutas de transporte de los clientes al lugar donde recibírn el servicio. Contabilidad: Prepagos, Facturas y, Notas de Débito y Crédito, todo enlazado a nuestro módulo de contabilidad Seven Accounting."
@@ -43,17 +43,17 @@ var imagen_mail = "img/productos/mail.png"
 var imagen_online = "img/productos/online.png"
 
 var img_aux_front = ["img/pantallashome/front/1.png","img/pantallashome/front/2.png","img/pantallashome/front/3.png","img/pantallashome/front/4.png"]
-var img_aux_point = ["img/pantallashome/point/1.png","img/pantallashome/point/2.png","img/pantallashome/point/3.png"]
+var img_aux_point = ["img/pantallashome/point/1.png","img/pantallashome/point/2.png","img/pantallashome/point/3.png","img/pantallashome/point/4.png"]
 var img_aux_inventory = ["img/pantallashome/inventory/1.png","img/pantallashome/inventory/2.png","img/pantallashome/inventory/3.png","img/pantallashome/inventory/4.png"]
 var img_aux_accounting = ["img/pantallashome/accounting/1.png","img/pantallashome/accounting/2.png","img/pantallashome/accounting/3.png","img/pantallashome/accounting/4.png"]
-var img_aux_fixed = ["img/pantallashome/fixed/1.png","img/pantallashome/fixed/2.png","img/pantallashome/fixed/3.png","img/pantallashome/fixed/4.png"]
+var img_aux_fixed = ["img/pantallashome/fixed/1.png","img/pantallashome/fixed/2.png","img/pantallashome/fixed/3.png"]
 var img_aux_payroll = ["img/pantallashome/payroll/1.png","img/pantallashome/payroll/2.png","img/pantallashome/payroll/3.png"]
 var img_aux_tour = ["img/pantallashome/tour/1.png","img/pantallashome/tour/2.png","img/pantallashome/tour/3.png"]
 var img_aux_decision = ["img/pantallashome/DSS/1.png","img/pantallashome/DSS/2.png","img/pantallashome/DSS/3.png","img/pantallashome/DSS/4.png"]
-var img_aux_management = ["img/pantallashome/management/1.png","img/pantallashome/management/2.png","img/pantallashome/management/3.png"]
+var img_aux_management = ["img/pantallashome/management/1.png","img/pantallashome/management/2.png"]
 var img_aux_comunication = ["img/pantallashome/comunication/1.png","img/pantallashome/comunication/2.png","img/pantallashome/comunication/3.png","img/pantallashome/comunication/4.png","img/pantallashome/comunication/5.png"]
-var img_aux_multiproperty = ["img/pantallashome/multiproperty/1.png","img/pantallashome/multiproperty/2.png","img/pantallashome/multiproperty/3.png","img/pantallashome/multiproperty/4.png"]
-var img_aux_mail = ["img/pantallashome/mail/1.png","img/pantallashome/mail/2.png","img/pantallashome/mail/3.png"]
+var img_aux_multiproperty = ["img/pantallashome/multiproperty/1.png","img/pantallashome/multiproperty/2.png","img/pantallashome/multiproperty/3.png"]
+var img_aux_mail = ["img/pantallashome/mail/1.png","img/pantallashome/mail/2.png"]
 var img_aux_online = ["img/pantallashome/online/1.png","img/pantallashome/online/2.png","img/pantallashome/online/3.png","img/pantallashome/online/4.png"]
 
 var titulo_front = "FRONT DESK"

@@ -47,6 +47,40 @@ const p2_online = [
   "Integración de contrato con Seven Front Desk.",
   "Administración de logos e imágenes promocionales. "
 ]
+
+
+const p1_tour = ["Sistema para Operadores de Tours Permite reservar varios servicios en diferentes fechas y, horas de inicio y final, todo en una misma reserva. Control de Disponibilidad por Servicio, Equipo y Recurso Humano. lexible e Intuitiva función para el control de las rutas de transporte de los clientes al lugar donde recibírn el servicio. Contabilidad: Prepagos, Facturas y, Notas de Débito y Crédito, todo enlazado a nuestro módulo de contabilidad Seven Accounting."]
+const p2_tour = [
+  "Reservas",
+  "Prespagos",
+  "Rutas"
+]
+
+
+const p1_dds = ["Módulo de reportería centralizado para gerentes. Permite a la gerencia acceder a los principales reportes de nuestros módulos en un mismo sitio. Entre los módulos con reportería en el DSS están Front Desk, Point of Sales, Inventory, Accounting y Management. Compatible con dispositivos móviles."]
+const p2_dds = [
+  "Estado de Resultados",
+  "Bitacora de Seguridad",
+  "Balance General"
+]
+
+const p1_comunication = ["Tarificador de Llamadas Telefónicas Se conecta a centrales Telefónicas de Puerto Serial y por IP. Registra y tarifica la duración de las llamadas, tanto en habitaciones como en oficinas administrativas. Envía los cargos a Front Desk. Brinda varios reportes estadísticos de las llamadas."]
+const p2_comunication = [
+  "Control de LLamadas",
+  "Directorio Telefonico",
+  "Extenciones",
+  "Reporte de LLamadas",
+]
+
+
+const p1_multi = ["Módulo de Administración para Cadenas de Hoteles que permite gestionar varios hoteles como si fuesen uno solo.."]
+const p2_multi = [
+  "Pronostico de Ingreso",
+  "Pronostico de Ocupación unificadas",
+  "Translados de Huespedes entre Hoteles"
+]
+
+
 const img = "img/compras.png"
 const p2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in iaculis neque. Mauris consectetur leo ipsum, eget porttitor metus porta ac. Donec in massa eget lectus aliquet vulputate"
 const box_inventory = [
@@ -161,6 +195,72 @@ const box_management = [
   }
 ]
 
+
+const box_tour = [
+  {
+    img: "img/tour1.png",
+    title: "Reservas",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
+  }, {
+    img: "img/tour2.png",
+    title: "Prepagos",
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
+  }, {
+    img: "img/tour3.png",
+    title: "Rutas",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
+  }
+]
+
+
+const box_dds = [
+  {
+    img: "img/dds1.png",
+    title: "Estado de Resultados",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
+  }, {
+    img: "img/dds2.png",
+    title: "Bitacora Genetal",
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
+  }, {
+    img: "img/dds3.png",
+    title: "Balance General",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
+  }
+]
+
+const box_comunication = [
+  {
+    img: "img/comunication1.png",
+    title: "Extenciones",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
+  }, {
+    img: "img/comunication2.png",
+    title: "Reporte de Llamadas",
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
+  }, {
+    img: "img/comunication3.png",
+    title: "Tarifas",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
+  }
+]
+
+const box_multi = [
+  {
+    img: "img/multi1.png",
+    title: "Pronostico de Ingresos",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
+  }, {
+    img: "img/multi2.png",
+    title: "Pronóstico de Ocupación",
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
+  }, {
+    img: "img/multi3.png",
+    title: "Translado de Huespedes",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
+  }
+]
+
 const inventory  = {
 "background": "inventory-f",
 "logo":"img/productos/inventory.png",
@@ -238,9 +338,66 @@ const management  = {
 "hash":"management"
 }
 
+const mail  = {
+"background": "management-f",
+"logo":"img/productos/mail.png",
+"img":"img/mana.png",
+"nombre":"Management",
+"p1":p1_management,
+"p2":p2_management,
+"box": box_management,
+"hash":"mail"
+}
 
 
-const json = [front,point,inventory,accounting,fixed,payroll,management]
+
+const tour  = {
+"background": "management-f",
+"logo":"img/productos/tour.png",
+"img":"img/auxtour.png",
+"nombre":"Tour Operator",
+"p1":p1_tour,
+"p2":p2_tour,
+"box": box_tour,
+"hash":"tour"
+}
+
+const dds  = {
+"background": "accounting-f",
+"logo":"img/productos/dds.png",
+"img":"img/dds.png",
+"nombre":"Desiciones Support System",
+"p1":p1_dds,
+"p2":p2_dds,
+"box": box_dds,
+"hash":"decision"
+}
+
+const comunication  = {
+"background": "accounting-f",
+"logo":"img/productos/communications.png",
+"img":"img/comunication.png",
+"nombre":"Comunication",
+"p1":p1_comunication,
+"p2":p2_comunication,
+"box": box_comunication,
+"hash":"comunication"
+}
+
+const multi  = {
+"background": "payroll-f",
+"logo":"img/productos/multi.png",
+"img":"img/multy.png",
+"nombre":"Multiproperty",
+"p1":p1_multi,
+"p2":p2_multi,
+"box": box_multi,
+"hash":"multiproperty"
+}
+
+
+
+const json = [front,point,inventory,accounting,fixed,payroll,management,mail,tour,dds,comunication,multi]
 
 function Box(img, title, text) {
   let ret = `<div class="column is-4">\
