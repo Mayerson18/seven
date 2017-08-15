@@ -1,5 +1,10 @@
 @media(max-width:768px){
 
+  .pad-item{
+    padding: 0px 2em!important;
+    text-align: justify;
+   }
+
   .img-logo{
     width: 64px!important;
     min-height: inherit!important;
@@ -7,7 +12,7 @@
 
   .owl-item{ padding: 0px!important; }
 
-  .item{ padding: 0px!important; }
+  //.item{ padding: 0px!important; }
 
   .items-fondo{ left: 0px!important;  }
 

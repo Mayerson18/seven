@@ -453,7 +453,7 @@ function Items(x){
   let ret = ""
   for (let i = 0; i < x.length; i++) {
     console.log(x[i].background)
-    ret += `<div class="item" data-hash="${x[i].hash}">\
+    ret += `<div class="item pad-item" data-hash="${x[i].hash}">\
     ${Item(x[i].background,x[i].logo,x[i].img,x[i].nombre,x[i].p1,x[i].p2,x[i].box)}\
   </div>`
   }
