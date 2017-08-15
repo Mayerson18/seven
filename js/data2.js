@@ -140,7 +140,7 @@ function products(title,text,img1,img2,operations,index){
           <ul id="function">\
             ${op(operations)}\
           </ul>\
-          <div class="flex-center"> <a href="${ "productos.html#" + index}" class="boton-products">SOLICITA MAS INFORMACIÓN</a></div>\
+          <div class="flex-center"> <a href="${ "productos.html#" + index}" class="boton-products">Aprender Más</a></div>\
         </div>\
         <div class="column">\
           <img class="img" src="${img2[0]}" width="100%" data-index="0" data-img='${JSON.stringify(img2)}'>\
@@ -154,36 +154,36 @@ function products(title,text,img1,img2,operations,index){
 
 
 
-const hotel1 = {img:"img/casos/hoteles/The Preserve at Los Altos.png",url:"thepreserveatlosaltos.com",img2:"img/flag-cr.png"}
-const hotel2 = {img:"img/casos/hoteles/logo hotel seminole colorX.png",url:"seminoleplaza.com",img2:"img/flag-cr.png"}
-const hotel3 = {img:"img/casos/hoteles/VolcanoBN.jpg",url:"volcanolodge.com/es",img2:"img/flag-cr.png"}
-const hotel4 = {img:"img/casos/hoteles/San Bosco Inn.png",url:"hotelsanbosco.com/en/",img2:"img/flag-cr.png"}
-const hotel5 = {img:"img/casos/hoteles/Cano_Negro.png",url:"canonegrolodge.com",img2:"img/flag-cr.png"}
-const hotel6 = {img:"img/casos/hoteles/Logo Nacazcol - Final.png",url:"nacazcol.com",img2:"img/flag-cr.png"}
-const hotel7 = {img:"img/casos/hoteles/Papagayo.png",url:"vp.cr/",img2:"img/flag-cr.png"}
-const hotel8 = {img:"img/casos/hoteles/La Mansion Inn.png",url:"lamansioninn.com/en/",img2:"img/flag-cr.png"}
-const hotel9 = {img:"img/casos/hoteles/Logo HDS.png",url:"hoteldelsur.net/",img2:"img/flag-cr.png"}
+const hotel1 = {img:"img/casos/hoteles/The Preserve at Los Altos.png",url:"http://www.thepreserveatlosaltos.com",img2:"img/flag-cr.png"}
+const hotel2 = {img:"img/casos/hoteles/logo hotel seminole colorX.png",url:"http://www.seminoleplaza.com",img2:"img/flag-cr.png"}
+const hotel3 = {img:"img/casos/hoteles/VolcanoBN.jpg",url:"http://www.volcanolodge.com/es",img2:"img/flag-cr.png"}
+const hotel4 = {img:"img/casos/hoteles/San Bosco Inn.png",url:"http://www.hotelsanbosco.com/en/",img2:"img/flag-cr.png"}
+const hotel5 = {img:"img/casos/hoteles/Cano_Negro.png",url:"http://www.canonegrolodge.com",img2:"img/flag-cr.png"}
+const hotel6 = {img:"img/casos/hoteles/Logo Nacazcol - Final.png",url:"http://www.nacazcol.com",img2:"img/flag-cr.png"}
+const hotel7 = {img:"img/casos/hoteles/Papagayo.png",url:"http://www.vp.cr/",img2:"img/flag-cr.png"}
+const hotel8 = {img:"img/casos/hoteles/La Mansion Inn.png",url:"http://www.lamansioninn.com/en/",img2:"img/flag-cr.png"}
+const hotel9 = {img:"img/casos/hoteles/Logo HDS.png",url:"http://www.hoteldelsur.net/",img2:"img/flag-cr.png"}
 const hotel10 = {img:"img/casos/hoteles/Puerto Azul.png",url:"www.puertoazulboutiqueresort.com/",img2:"img/flag-cr.png"}
-const hotel11 = {img:"img/casos/hoteles/Logo_Villa_del_Sueno_2017.png",url:"villadelsueno.com/",img2:"img/flag-cr.png"}
-const hotel12 = {img:"img/casos/hoteles/Chachagua_Eco_Lodge.png",url:"chachaguarainforesthotel.com/",img2:"img/flag-cr.png"}
-const hotel13 = {img:"img/casos/hoteles/downtown.png",url:"fortunadowntowninn.com/",img2:"img/flag-cr.png"}
-const hotel14 = {img:"img/casos/hoteles/Finca Luna Nueva Lodge.jpg",url:"fincalunanuevalodge.com/",img2:"img/flag-cr.png"}
-const hotel15 = {img:"img/casos/hoteles/LOGOTIPO HOTEL LOS ROBLES.jpg",url:"hotellosrobles.com",img2:"img/flag-cr.png"}
-const hotel16 = {img:"img/casos/hoteles/Logo Punta Teonoste.png",url:"puntateonoste.com/",img2:"img/flag-cr.png"}
-const hotel17 = {img:"img/casos/hoteles/Taormina.png",url:"taorminahotelandcasino.com/",img2:"img/flag-cr.png"}
-const hotel18 = {img:"img/casos/hoteles/Hotel_Executive_Managua.jpg",url:"executivemanagua.online.com.ni/",img2:"img/flag-cr.png"}
-const hotel19 = {img:"img/casos/hoteles/Logo Bergerac.png",url:"bergerachotel.com/",img2:"img/flag-cr.png"}
-const hotel20 = {img:"img/casos/hoteles/agualcas.jpg",url:"hotelagualcas.com/",img2:"img/flag-cr.png"}
-const hotel21 = {img:"img/casos/hoteles/HCC_Guana LOGO.png",url:"casacondebeach.com/",img2:"img/flag-cr.png"}
-const hotel22 = {img:"img/casos/hoteles/Logo HCC.JPEG",url:"casacondecity.com/",img2:"img/flag-cr.png"}
-const hotel23 = {img:"img/casos/hoteles/Logo helsm.png",url:"lagunasanmartin.com.ni/",img2:"img/flag-cr.png"}
-const hotel24 = {img:"img/casos/hoteles/logo marbella.png",url:"marbella.com.ni/",img2:"img/flag-cr.png"}
-const hotel25 = {img:"img/casos/hoteles/Casa Roland Marina Golfito.png",url:"casarolandgolfito.com/",img2:"img/flag-cr.png"}
-const hotel26 = {img:"img/casos/hoteles/Logo-Casa-Ronald-SJ-200px.png",url:"casarolandsanjose.com/",img2:"img/flag-cr.png"}
-const hotel27 = {img:"img/casos/hoteles/Villas-Lirio.png",url:"villaslirio.com/",img2:"img/flag-cr.png"}
-const hotel28 = {img:"img/casos/hoteles/arenal_rabfer.png",url:"arenalrabfer.com/",img2:"img/flag-cr.png"}
-const hotel29 = {img:"img/casos/hoteles/las colinas.png",url:"lascolinasarenal.com/",img2:"img/flag-cr.png"}
-const hotel30 = {img:"img/casos/hoteles/Hilton-Garden-Inn-Hero.jpg",url:"hiltonhotels.com/es_XM/costa-rica/hilton-garden-inn-san-jose-la-sabana/",img2:"img/flag-cr.png"}
+const hotel11 = {img:"img/casos/hoteles/Logo_Villa_del_Sueno_2017.png",url:"http://www.villadelsueno.com/",img2:"img/flag-cr.png"}
+const hotel12 = {img:"img/casos/hoteles/Chachagua_Eco_Lodge.png",url:"http://www.chachaguarainforesthotel.com/",img2:"img/flag-cr.png"}
+const hotel13 = {img:"img/casos/hoteles/downtown.png",url:"http://www.fortunadowntowninn.com/",img2:"img/flag-cr.png"}
+const hotel14 = {img:"img/casos/hoteles/Finca Luna Nueva Lodge.jpg",url:"http://www.fincalunanuevalodge.com/",img2:"img/flag-cr.png"}
+const hotel15 = {img:"img/casos/hoteles/LOGOTIPO HOTEL LOS ROBLES.jpg",url:"http://www.hotellosrobles.com",img2:"img/flag-cr.png"}
+const hotel16 = {img:"img/casos/hoteles/Logo Punta Teonoste.png",url:"http://www.puntateonoste.com/",img2:"img/flag-cr.png"}
+const hotel17 = {img:"img/casos/hoteles/Taormina.png",url:"http://www.taorminahotelandcasino.com/",img2:"img/flag-cr.png"}
+const hotel18 = {img:"img/casos/hoteles/Hotel_Executive_Managua.jpg",url:"http://www.executivemanagua.online.com.ni/",img2:"img/flag-cr.png"}
+const hotel19 = {img:"img/casos/hoteles/Logo Bergerac.png",url:"http://www.bergerachotel.com/",img2:"img/flag-cr.png"}
+const hotel20 = {img:"img/casos/hoteles/agualcas.jpg",url:"http://www.hotelagualcas.com/",img2:"img/flag-cr.png"}
+const hotel21 = {img:"img/casos/hoteles/HCC_Guana LOGO.png",url:"http://www.casacondebeach.com/",img2:"img/flag-cr.png"}
+const hotel22 = {img:"img/casos/hoteles/Logo HCC.JPEG",url:"http://www.casacondecity.com/",img2:"img/flag-cr.png"}
+const hotel23 = {img:"img/casos/hoteles/Logo helsm.png",url:"http://www.lagunasanmartin.com.ni/",img2:"img/flag-cr.png"}
+const hotel24 = {img:"img/casos/hoteles/logo marbella.png",url:"http://www.marbella.com.ni/",img2:"img/flag-cr.png"}
+const hotel25 = {img:"img/casos/hoteles/Casa Roland Marina Golfito.png",url:"http://www.casarolandgolfito.com/",img2:"img/flag-cr.png"}
+const hotel26 = {img:"img/casos/hoteles/Logo-Casa-Ronald-SJ-200px.png",url:"http://www.casarolandsanjose.com/",img2:"img/flag-cr.png"}
+const hotel27 = {img:"img/casos/hoteles/Villas-Lirio.png",url:"http://www.villaslirio.com/",img2:"img/flag-cr.png"}
+const hotel28 = {img:"img/casos/hoteles/arenal_rabfer.png",url:"http://www.arenalrabfer.com/",img2:"img/flag-cr.png"}
+const hotel29 = {img:"img/casos/hoteles/las colinas.png",url:"http://www.lascolinasarenal.com/",img2:"img/flag-cr.png"}
+const hotel30 = {img:"img/casos/hoteles/Hilton-Garden-Inn-Hero.jpg",url:"http://www.hiltonhotels.com/es_XM/costa-rica/hilton-garden-inn-san-jose-la-sabana/",img2:"img/flag-cr.png"}
 const hoteles1 = [
   hotel1,
   hotel2,
@@ -270,7 +270,7 @@ function casos(vak){
         <img class="img-item" src="${val.img}">
       </div>
       <div class="flex-center">
-        <p>${val.url}</p>
+        <a href="${val.url}" target="_blank">${val.url}</a>
       </div>
       <div class="flex-center">
         <img class="img-cr" src="${val.img2}">
