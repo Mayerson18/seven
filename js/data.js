@@ -397,7 +397,7 @@ const multi  = {
 
 
 
-const json = [front,point,inventory,accounting,fixed,payroll,management,mail,tour,dds,comunication,multi]
+const json = [front,point,inventory,accounting,fixed,payroll,tour,dds,management,comunication,mail,multi]
 
 function Box(img, title, text) {
   let ret = `<div class="column is-4">\
