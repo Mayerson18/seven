@@ -9,9 +9,12 @@
 
 .w-full{ width: 100%!important}
 
+.hide{ display: none; }
+
 body {
   font: 100% $font-stack;
   color: $primary-color;
+
 }
 
 ul{/* Custom li*/
@@ -19,7 +22,6 @@ ul{/* Custom li*/
   margin-left: 0;
   padding-left: 1em;
 }
-
 
 li{ padding-left: 5px; }
 

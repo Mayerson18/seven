@@ -53,8 +53,11 @@ $('#carrusel').owlCarousel({
   margin: 0,
   autoHeight: true,
   URLhashListener:true,
-  startPosition: 'URLHash'
+  UstartPosition: 'URLHash'
 });
+//$("#carrusel > div.owl-dots.hide > div.owl-dot.active")
+
+$('#carrusel').find(".owl-dots").addClass("hide");
 
 $('.coki').owlCarousel({
   items: 1,
@@ -73,7 +76,7 @@ $('.coki').owlCarousel({
        1000:{
            items:10,
            nav:true,
-           loop:false
+           loop:true
        }
    }
 });
