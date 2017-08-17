@@ -1,6 +1,12 @@
 //index
 $(function () {
 
+        function snack() {
+            var x = document.getElementById("snackbar")
+            x.className = "show";
+            setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        }
+
         $('form').on('submit', function (e) {
 
           e.preventDefault();
@@ -20,12 +26,6 @@ $(function () {
 //ENVIANDO FORM
 
 $(document).ready(function() {
-
-  function snack() {
-      var x = document.getElementById("snackbar")
-      x.className = "show";
-      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
-  }
 
 $(".nav-toggle").click(function() {
   if($(this).hasClass("is-active")){
