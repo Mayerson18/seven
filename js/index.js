@@ -55,7 +55,17 @@ $o = $(".oval");
 $o.hover( function(e){
   e.preventDefault();
   var x = $($(this).siblings("a"))
+  /*var href = $(this).siblings("a").attr("href");
+  var next = $(".coki").find(".owl-nav").find(".owl-next");
+  $(".coki").children().children().find(".owl-item.active").each(function(){
+    var href2 = $(this).first().find("a").attr("href");
+    if(href != href2)
+      next.click();
+    else
+      return;
+  })*/
   x[0].click();
+
 });
 
 $('#imgs').owlCarousel({
@@ -76,13 +86,13 @@ $('#data-json2').owlCarousel({
 $('#carrusel').owlCarousel({
   items: 1,
   margin: 0,
+  nav:false,
+  dots:false,
   autoHeight: true,
   URLhashListener:true,
-  UstartPosition: 'URLHash'
+  startPosition: 'URLHash'
 });
 //$("#carrusel > div.owl-dots.hide > div.owl-dot.active")
-
-$('#carrusel').find(".owl-dots").addClass("hide");
 
 $('.coki').owlCarousel({
   items: 1,
@@ -102,6 +112,8 @@ $('.coki').owlCarousel({
            items:10,
            nav:true,
            loop:true
+           //URLhashListener:true,
+           //startPosition: 'URLHash'
        }
    }
 });
@@ -113,15 +125,19 @@ $('.coki2').owlCarousel({
   responsive:{
        0:{
            items:1,
-           nav:true
+           dots:false,
+           nav:true,
+           loop:true
        },
        600:{
            items:3,
+           dots:false,
            nav:true
        },
        1000:{
            items:5,
            nav:true,
+           dots:false,
            loop:false
        }
    }
@@ -168,12 +184,14 @@ function animation(x,img,i){
     loop:true,
     items: 1,
     margin: 0,
-    dots:true,
+    dots:false,
     autoplay:true,
     autoplayTimeout:6000
   });
   $(".owl-next").click(function(){
-    $(".owl-item.active").find('.item').find("a")[0].click();
+    setTimeout(function() {
+      $(".owl-item.active").find('.item').find("a")[0].click();
+    },100)
   });
 
   $(".owl-prev").click(function(){

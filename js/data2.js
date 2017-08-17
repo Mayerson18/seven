@@ -125,7 +125,7 @@ function op(o){
 }
 
 function products(title,text,img1,img2,operations,index){
-  const html = `<div class="item" data-hash="${index}">\
+  const html = `<div class="item item-aux" data-hash="${index}">\
     <div class="content">\
       <div class="row">\
         <h1 class="content-title">${title}</h1>\
@@ -146,6 +146,7 @@ function products(title,text,img1,img2,operations,index){
           <img class="img" src="${img2[0]}" width="100%" data-index="0" data-img='${JSON.stringify(img2)}'>\
         </div>\
       </div>\
+      <div class="flex-center aparecer"> <a href="${ "productos.html#" + index}" class="boton-products">Solicita Más Información</a></div>\
     </div>\
   </div>`;
   return html;
