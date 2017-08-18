@@ -1,4 +1,6 @@
 //index
+var orden = ["front","point","inventory","accounting","fixed","payroll","tour","decision","management","comunication","multiproperty","mail","online"]
+
 $(function () {
 
         function snack() {
@@ -193,11 +195,42 @@ function animation(x,img,i){
   $(".owl-next").click(function(){
     setTimeout(function() {
       //$(".owl-item.active").find('.item').find("a")[0].click();
+      var href = window.location.search.substr(1)
+      var type = window.location.hash.substr(1);
+      console.log(type)
+      if(typeof type === "undefined"  || type == "")
+        type="front";
+      var encontro = false;
+      if(type!="online"){
+        $(".owl-next").removeClass("disabled");
+        var i = 0;
+        for ( i = 0; i < orden.length; i++) {
+          if (orden[i] == type)
+            encontro=true;
+          if(encontro)
+            break;
+        }
+        window.location.hash= orden[++i];
+      }
     },100)
   });
 
   $(".owl-prev").click(function(){
     //$(".owl-item.active").find('.item').find("a")[0].click();
+    var href = window.location.search.substr(1)
+    var type = window.location.hash.substr(1);
+    var encontro = false;
+    if(type!="front"){
+      $(".owl-next").removeClass("disabled");
+      var i = 0;
+      for ( i = 0; i < orden.length; i++) {
+        if (orden[i] == type)
+          encontro=true;
+        if(encontro)
+          break;
+      }
+      window.location.hash= orden[--i];
+    }
   });
   $(".owl-prev").text("Atrás");
   $(".owl-next").text("Siguiente");
