@@ -195,13 +195,38 @@ function animation(x,img,i){
   $(".owl-next").click(function(){
     setTimeout(function() {
       //$(".owl-item.active").find('.item').find("a")[0].click();
+      var length = $(".coki").children().children().find(".owl-item.active").length;
+      if(length>1){
+        var href = window.location.search.substr(1)
+        var type = window.location.hash.substr(1);
+        console.log(type)
+        if(typeof type === "undefined"  || type == "")
+          type="front";
+        var encontro = false;
+        if(type!="online"){
+          $(".owl-next").removeClass("disabled");
+          var i = 0;
+          for ( i = 0; i < orden.length; i++) {
+            if (orden[i] == type)
+              encontro=true;
+            if(encontro)
+              break;
+          }
+          window.location.hash= orden[++i];
+        }
+      }else {
+        $(".owl-item.active").find('.item').find("a")[0].click();
+      }
+    },100)
+  });
+
+  $(".owl-prev").click(function(){
+    var length = $(".coki").children().children().find(".owl-item.active").length;
+    if(length>1){
       var href = window.location.search.substr(1)
       var type = window.location.hash.substr(1);
-      console.log(type)
-      if(typeof type === "undefined"  || type == "")
-        type="front";
       var encontro = false;
-      if(type!="online"){
+      if(type!="front"){
         $(".owl-next").removeClass("disabled");
         var i = 0;
         for ( i = 0; i < orden.length; i++) {
@@ -210,26 +235,10 @@ function animation(x,img,i){
           if(encontro)
             break;
         }
-        window.location.hash= orden[++i];
+        window.location.hash= orden[--i];
       }
-    },100)
-  });
-
-  $(".owl-prev").click(function(){
-    //$(".owl-item.active").find('.item').find("a")[0].click();
-    var href = window.location.search.substr(1)
-    var type = window.location.hash.substr(1);
-    var encontro = false;
-    if(type!="front"){
-      $(".owl-next").removeClass("disabled");
-      var i = 0;
-      for ( i = 0; i < orden.length; i++) {
-        if (orden[i] == type)
-          encontro=true;
-        if(encontro)
-          break;
-      }
-      window.location.hash= orden[--i];
+    }else {
+      $(".owl-item.active").find('.item').find("a")[0].click();
     }
   });
   $(".owl-prev").text("Atrás");
