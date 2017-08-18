@@ -113,7 +113,7 @@ $('.coki').owlCarousel({
        1000:{
            items:10,
            nav:true,
-           loop:true
+           loop:false
            //URLhashListener:true,
            //startPosition: 'URLHash'
        }
