@@ -51,9 +51,11 @@ $(".nav-item").click(function() {
   $(".nav-toggle").removeClass("is-active")
 });
 
-$o = $(".oval");
-$o.hover( function(e){
+$(document).on("mouseenter",".oval",function(e){
+  console.log("hover");
+
   e.preventDefault();
+
   var x = $($(this).siblings("a"))
   /*var href = $(this).siblings("a").attr("href");
   var next = $(".coki").find(".owl-nav").find(".owl-next");
@@ -190,12 +192,12 @@ function animation(x,img,i){
   });
   $(".owl-next").click(function(){
     setTimeout(function() {
-      $(".owl-item.active").find('.item').find("a")[0].click();
+      //$(".owl-item.active").find('.item').find("a")[0].click();
     },100)
   });
 
   $(".owl-prev").click(function(){
-    $(".owl-item.active").find('.item').find("a")[0].click();
+    //$(".owl-item.active").find('.item').find("a")[0].click();
   });
   $(".owl-prev").text("Atrás");
   $(".owl-next").text("Siguiente");
