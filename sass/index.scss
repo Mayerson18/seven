@@ -1,7 +1,7 @@
 @import "var";
 @import "mixins";
-@import "media";
 @import "fondo";
+@import "media";
 @import "margenes";
 @import "v1";
 @import "v2";
@@ -151,7 +151,6 @@ textarea{ height: 115px; }
   line-height: 15px;
 
 }
-
 
 .flex-center p{
     color: #1a0dab;

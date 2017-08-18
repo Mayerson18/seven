@@ -1,6 +1,8 @@
 @media(max-width:768px){
 
-  .item-aux{ padding: 0px!important; height: inherit!important;}
+  .item-aux{ padding: 0px!important; }
+
+  .fondo-aux{ height: inherit!important;}
 
   .aparecer-vis{ visibility: visible;}
 
@@ -15,8 +17,6 @@
   }
 
   .owl-item{ padding: 0px!important; }
-
-  //.item{ padding: 0px!important; }
 
   .items-fondo{ left: 0px!important;  }
 

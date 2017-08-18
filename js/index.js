@@ -243,4 +243,5 @@ function animation(x,img,i){
   });
   $(".owl-prev").text("Atrás");
   $(".owl-next").text("Siguiente");
+  //$(".slyder").children().children().find(".cloned").find(".item").find("img").addClass("fondo-aux");
 });
