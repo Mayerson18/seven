@@ -1,71 +1,71 @@
 "use strict";
-const p1_inventory = ["Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"]
-const p2_inventory = [
+var p1_inventory = ["Seven Inventory  posee más de 45 opciones con más de 90 funciones, lo que facilita controlar el inventario hasta el más mínimo requerimiento, porque además de las funciones básicas como lo son compras, traslados, rebajas, ajustes, devoluciones; el sistema permite manejar órdenes de compra, solicitudes de compra, pedidos, darle seguimiento a esos procesos, elaboración de productos en base a otros productos, despiece, ubicación física y control del producto según el gramaje del lugar donde se encuentre,  en fin, ¡90 funciones!"]
+var p2_inventory = [
     "Control, compras,  traslado, toma física. ",
     "Órdenes y solicitudes de compra.",
     "Control de traslado entre departamentos. "
   ]
-const p1_front = ["El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.","Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción)."]
-const p2_front = [
+var p1_front = ["El módulo Front Desk manejo de operaciones diarias, contiene más de 160 opciones entre operativas, configuración y reportes, es a nivel de hoteles el más importante entre los módulos.","Front Desk contiene el módulo de Front Parámetros independiente al operativo, ya que está enfocado a los departamentos de mercadeo y recepción (Jefe de Recepción)."]
+var p2_front = [
     "Manejo de reservas",
     "Operaciones Sobre habitaciones",
      "Estadísticas"
    ]
-const p1_fixed = ["El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos."]
-const p2_fixed = [
+var p1_fixed = ["El módulo de activos fijos con sus 13 opciones nos permite crear áreas, grupos y los activos como tal, con el fin de manejar su ubicación, estado, tasa de depreciación, responsables y movimientos contables propios del manejo de activos fijos."]
+var p2_fixed = [
   "Configuración de áreas para los activos.",
   "Inventario de Activos Fijos", "Traslado de Activos"
 ]
 
-const p1_accounting = ["Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multimoneda y manejo de varias empresas contables."]
-const p2_accounting = [
+var p1_accounting = ["Nuestro sistema contable cuenta con todas las operaciones propias que se necesitan en el trabajo diario. Posee más de 30 opciones y 120 funciones entre operativas, configuración y reportes, entre los más destacables tenemos control de multimoneda y manejo de varias empresas contables."]
+var p2_accounting = [
   "Asientos Contables",
   "Catálogo de Cuentas",
   "Conciliación Bancaria",
   "Extracto de Cuentas",
   "Manejo de Presupuestos"
 ]
-const p1_payroll = ["Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla."]
-const p2_payroll = [
+var p1_payroll = ["Nuestro sistema de planilla contiene 14 opciones que permite un control detallado del personal y departamentos de su empresa. Se puede configurar cualquier tipo de afectación (modificadores del salario), manejadas a varios niveles, los cuales nos permiten indicar si la afectación es parte de los cálculos de cargas sociales o no, si acumula o no  pagos de aguinaldo o vacaciones. También nos permite automatizar por empleado rebajos o pagos en la planilla."]
+var p2_payroll = [
   "Control de cuentas por cobrar y pagar por empleado. ",
   "Histórico por planillas.", "Cálculos automáticos de aguinaldos, vacaciones, cesantías, entre otros."
 ]
-const p1_point = ["El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. ","Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta."]
-const p2_point = [
+var p1_point = ["El módulo Point of sales o punto de ventas fue creado para la facturación de productos, y se puede configurar a cualquier mercado, restaurant, tienda, tour desk, en fin, cualquier transacción que implique una venta. ","Para control de inventario el punto de venta tiene integración con nuestro sistema de inventario, con el cual, se puede liar los productos de ventas con los productos de inventario, así se puede hacer explosión de insumos muy detallado, en el caso de restaurantes esta función costea los platos y rebaja las cantidades estipuladas en la receta."]
+var p2_point = [
   "Informe de Ventas",
   "Mapa de Mesas",
   "Selección de cuentas contables para enlaces."
 ]
-const p1_management = ["El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios."]
-const p2_management = [
+var p1_management = ["El sistema Management es indispensable para el control y supervisión de los usuarios y terminales que usan el sistema. Aquí se puede crear, eliminar o dar permiso a los usuario, ítem por ítem, en cada uno de los módulos, ofreciendo la posibilidad de dar permisos individuales o grupales de lo que puede hacer en toda la suite.  Además, en este módulo queda registrado todo movimiento que realicen los usuarios."]
+var p2_management = [
   "Selección de permisos por usuario, opción por opción en cada uno de los módulos.",
   "Histórico de movimientos de los usuarios en los módulos."
 ]
-const p1_online = ["Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk."]
-const p2_online = [
+var p1_online = ["Seven Online está diseñado para tener integración con Front Desk,  así permitir al huésped hacer su propia reservación mediante la página del hotel. La administración del módulo es prácticamente nula, ya que la información se extrae directamente de Seven Front Desk."]
+var p2_online = [
   "Al terminar la reserva se guarda automáticamente de Front Desk y se envían los correos correspondientes.",
   "Integración de contrato con Seven Front Desk.",
   "Administración de logos e imágenes promocionales. "
 ]
 
 
-const p1_tour = ["Sistema para Operadores de Tours Permite reservar varios servicios en diferentes fechas y, horas de inicio y final, todo en una misma reserva. Control de Disponibilidad por Servicio, Equipo y Recurso Humano. lexible e Intuitiva función para el control de las rutas de transporte de los clientes al lugar donde recibírn el servicio. Contabilidad: Prepagos, Facturas y, Notas de Débito y Crédito, todo enlazado a nuestro módulo de contabilidad Seven Accounting."]
-const p2_tour = [
+var p1_tour = ["Sistema para Operadores de Tours Permite reservar varios servicios en diferentes fechas y, horas de inicio y final, todo en una misma reserva. Control de Disponibilidad por Servicio, Equipo y Recurso Humano. lexible e Intuitiva función para el control de las rutas de transporte de los clientes al lugar donde recibírn el servicio. Contabilidad: Prepagos, Facturas y, Notas de Débito y Crédito, todo enlazado a nuestro módulo de contabilidad Seven Accounting."]
+var p2_tour = [
   "Reservas",
   "Prespagos",
   "Rutas"
 ]
 
 
-const p1_dds = ["Módulo de reportería centralizado para gerentes. Permite a la gerencia acceder a los principales reportes de nuestros módulos en un mismo sitio. Entre los módulos con reportería en el DSS están Front Desk, Point of Sales, Inventory, Accounting y Management. Compatible con dispositivos móviles."]
-const p2_dds = [
+var p1_dds = ["Módulo de reportería centralizado para gerentes. Permite a la gerencia acceder a los principales reportes de nuestros módulos en un mismo sitio. Entre los módulos con reportería en el DSS están Front Desk, Point of Sales, Inventory, Accounting y Management. Compatible con dispositivos móviles."]
+var p2_dds = [
   "Estado de Resultados",
   "Bitacora de Seguridad",
   "Balance General"
 ]
 
-const p1_comunication = ["Tarificador de Llamadas Telefónicas Se conecta a centrales Telefónicas de Puerto Serial y por IP. Registra y tarifica la duración de las llamadas, tanto en habitaciones como en oficinas administrativas. Envía los cargos a Front Desk. Brinda varios reportes estadísticos de las llamadas."]
-const p2_comunication = [
+var p1_comunication = ["Tarificador de Llamadas Telefónicas Se conecta a centrales Telefónicas de Puerto Serial y por IP. Registra y tarifica la duración de las llamadas, tanto en habitaciones como en oficinas administrativas. Envía los cargos a Front Desk. Brinda varios reportes estadísticos de las llamadas."]
+var p2_comunication = [
   "Control de LLamadas",
   "Directorio Telefonico",
   "Extenciones",
@@ -73,24 +73,24 @@ const p2_comunication = [
 ]
 
 
-const p1_multi = ["Módulo de Administración para Cadenas de Hoteles que permite gestionar varios hoteles como si fuesen uno solo.."]
-const p2_multi = [
+var p1_multi = ["Módulo de Administración para Cadenas de Hoteles que permite gestionar varios hoteles como si fuesen uno solo.."]
+var p2_multi = [
   "Pronostico de Ingreso",
   "Pronostico de Ocupación unificadas",
   "Translados de Huespedes entre Hoteles"
 ]
 
-const p1_onli = ["Reservas en 6 sencillos pasos.El cliente puede reservar varias habitaciónes con diferentes cantidades de pax en una misma reserva. Permite reservar servicios adicionales. Permite configurar los textos de habitaciones, servicios adicionales y descripciones en los tres idiomas."]
-const p2_onli = [
+var p1_onli = ["Reservas en 6 sencillos pasos.El cliente puede reservar varias habitaciónes con diferentes cantidades de pax en una misma reserva. Permite reservar servicios adicionales. Permite configurar los textos de habitaciones, servicios adicionales y descripciones en los tres idiomas."]
+var p2_onli = [
   "Responsive: Interfaz autoadaptable a dispositivos móviles.",
   "Disponible en Ingles, Español y Francés.",
   "Imágenes personalizables."
 ]
 
 
-const img = "img/compras.png"
-const p2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in iaculis neque. Mauris consectetur leo ipsum, eget porttitor metus porta ac. Donec in massa eget lectus aliquet vulputate"
-const box_inventory = [
+var img = "img/compras.png"
+var p2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in iaculis neque. Mauris consectetur leo ipsum, eget porttitor metus porta ac. Donec in massa eget lectus aliquet vulputate"
+var box_inventory = [
   {
     img: "img/inv1.png",
     title: "Inventarios",
@@ -106,7 +106,7 @@ const box_inventory = [
   }
 ]
 
-const box_front = [
+var box_front = [
   {
     img: "img/front1.png",
     title: "Estadísticas de Explotación",
@@ -122,7 +122,7 @@ const box_front = [
   }
 ]
 
-const box_accounting = [
+var box_accounting = [
   {
     img: "img/accoun1.png",
     title: "Asientos Contables",
@@ -138,7 +138,7 @@ const box_accounting = [
   }
 ]
 
-const box_point = [
+var box_point = [
   {
     img: "img/point1.png",
     title: "Informe de Ventas",
@@ -154,7 +154,7 @@ const box_point = [
   }
 ]
 
-const box_payroll = [
+var box_payroll = [
   {
     img: "img/pay1.png",
     title: "Afectaciones",
@@ -170,7 +170,7 @@ const box_payroll = [
   }
 ]
 
-const box_fixed = [
+var box_fixed = [
   {
     img: "img/fa1.png",
     title: "Entrada de Activos",
@@ -186,7 +186,7 @@ const box_fixed = [
   }
 ]
 
-const box_management = [
+var box_management = [
   {
     img: "img/mana1.png",
     title: "Usuarios",
@@ -203,7 +203,7 @@ const box_management = [
 ]
 
 
-const box_tour = [
+var box_tour = [
   {
     img: "img/tour1.png",
     title: "Reservas",
@@ -220,7 +220,7 @@ const box_tour = [
 ]
 
 
-const box_dds = [
+var box_dds = [
   {
     img: "img/dds1.png",
     title: "Estado de Resultados",
@@ -236,7 +236,7 @@ const box_dds = [
   }
 ]
 
-const box_comunication = [
+var box_comunication = [
   {
     img: "img/comunication1.png",
     title: "Extenciones",
@@ -252,7 +252,7 @@ const box_comunication = [
   }
 ]
 
-const box_multi = [
+var box_multi = [
   {
     img: "img/multi1.png",
     title: "Pronostico de Ingresos",
@@ -269,7 +269,7 @@ const box_multi = [
 ]
 
 
-const box_onli = [
+var box_onli = [
   {
     img: "img/multi1.png",
     title: "Pronostico de Ingresos",
@@ -285,7 +285,7 @@ const box_onli = [
   }
 ]
 
-const inventory  = {
+var inventory  = {
 "background": "inventory-f",
 "logo":"img/productos/inventory.png",
 "img":"img/inv.png",
@@ -296,7 +296,7 @@ const inventory  = {
 "hash":"inventory"
 }
 
-const front  = {
+var front  = {
 "background": "front-f",
 "logo":"img/productos/front.png",
 "img":"img/front.png",
@@ -307,7 +307,7 @@ const front  = {
 "hash":"front"
 }
 
-const accounting  = {
+var accounting  = {
 "background": "accounting-f",
 "logo":"img/productos/accounting.png",
 "img":"img/accoun.png",
@@ -318,7 +318,7 @@ const accounting  = {
 "hash":"accounting"
 }
 
-const point  = {
+var point  = {
 "background": "point-f",
 "logo":"img/productos/point.png",
 "img":"img/point.png",
@@ -329,7 +329,7 @@ const point  = {
 "hash":"point"
 }
 
-const payroll  = {
+var payroll  = {
 "background": "payroll-f",
 "logo":"img/productos/payroll.png",
 "img":"img/pay.png",
@@ -340,7 +340,7 @@ const payroll  = {
 "hash":"payroll"
 }
 
-const fixed  = {
+var fixed  = {
 "background": "fixed-f",
 "logo":"img/productos/fixed.png",
 "img":"img/fa.png",
@@ -351,7 +351,7 @@ const fixed  = {
 "hash":"fixed"
 }
 
-const management  = {
+var management  = {
 "background": "management-f",
 "logo":"img/productos/management.png",
 "img":"img/mana.png",
@@ -362,7 +362,7 @@ const management  = {
 "hash":"management"
 }
 
-const mail  = {
+var mail  = {
 "background": "management-f",
 "logo":"img/productos/mail.png",
 "img":"img/mana.png",
@@ -375,7 +375,7 @@ const mail  = {
 
 
 
-const tour  = {
+var tour  = {
 "background": "management-f",
 "logo":"img/productos/tour.png",
 "img":"img/auxtour.png",
@@ -386,7 +386,7 @@ const tour  = {
 "hash":"tour"
 }
 
-const dds  = {
+var dds  = {
 "background": "accounting-f",
 "logo":"img/productos/dds.png",
 "img":"img/dds.png",
@@ -397,7 +397,7 @@ const dds  = {
 "hash":"decision"
 }
 
-const comunication  = {
+var comunication  = {
 "background": "accounting-f",
 "logo":"img/productos/communications.png",
 "img":"img/comunication.png",
@@ -408,7 +408,7 @@ const comunication  = {
 "hash":"comunication"
 }
 
-const multi  = {
+var multi  = {
 "background": "payroll-f",
 "logo":"img/productos/multi.png",
 "img":"img/multy.png",
@@ -419,7 +419,7 @@ const multi  = {
 "hash":"multiproperty"
 }
 
-const onli  = {
+var onli  = {
 "background": "payroll-f",
 "logo":"img/productos/online.png",
 "img":"img/online.png",
@@ -432,10 +432,10 @@ const onli  = {
 
 
 
-const json = [front,point,inventory,accounting,fixed,payroll,tour,dds,management,comunication,multi,mail,onli]
+var json = [front,point,inventory,accounting,fixed,payroll,tour,dds,management,comunication,multi,mail,onli]
 
 function Box(img, title, text) {
-  let ret = `<div class="column is-4">\
+  var ret = `<div class="column is-4">\
                 <img class="w" src="${img}" >\
                 <h3 class="h3-change">${title}</h3>\
                 <p class="p-change">${text}</p>\
@@ -444,23 +444,23 @@ function Box(img, title, text) {
 }
 
 function Boxs(x){
-  let ret =""
-  for (let i = 0; i < x.length; i++) {
+  var ret =""
+  for (var i = 0; i < x.length; i++) {
     ret += Box(x[i].img,x[i].title,x[i].text)
   }
   return ret
 }
 
 function It(x,x2){
-  let ret=""
-  for (let i = 0; i < x.length; i++) {
+  var ret=""
+  for (var i = 0; i < x.length; i++) {
     ret+=`<p class="p-change${x2}">${x[i]}</p>`
   }
   return ret
 }
 
 function Item(f, img, img2, title, p1, p2, box) {
-  let ret = `<div class="img-center">\
+  var ret = `<div class="img-center">\
       <img id="log" src="${img}">\
   </div>\
   ${It(p1,"2")}\
@@ -485,8 +485,8 @@ function Item(f, img, img2, title, p1, p2, box) {
 
 function Items(x){
 
-  let ret = ""
-  for (let i = 0; i < x.length; i++) {
+  var ret = ""
+  for (var i = 0; i < x.length; i++) {
     ret += `<div class="item pad-item" data-hash="${x[i].hash}">\
     ${Item(x[i].background,x[i].logo,x[i].img,x[i].nombre,x[i].p1,x[i].p2,x[i].box)}\
   </div>`
@@ -494,5 +494,5 @@ function Items(x){
   return ret
 }
 
-const html = `${Items(json)}`
+var html = `${Items(json)}`
 $("#carrusel").html(html)

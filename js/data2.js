@@ -106,8 +106,8 @@ var json = [
   obj_online
 ]
 
-let result = ""
-for (let i = 0; i < json.length; i++) {
+var result = ""
+for (var i = 0; i < json.length; i++) {
   const val = json[i]
   result += products(val.title,val.text,val.img1,val.img2,val.ops,val.hash)
 }
@@ -116,8 +116,8 @@ $("#data-json2").html(result)
 
 /****************FUNCIONES********************/
 function op(o){
-  let t = ""
-  for (let i = 0; i < o.length; i++) {
+  var t = ""
+  for (var i = 0; i < o.length; i++) {
     const val = o[i]
     t += `<li class="function"><a>${val}</a></li>`
   }
@@ -262,8 +262,8 @@ function itemsF(ite,index){
 }
 
 function casos(vak){
-  let x = ""
-  for (let i = 0; i < vak.length; i++) {
+  var x = ""
+  for (var i = 0; i < vak.length; i++) {
     const val = vak[i]
     x += `
     <div class="item casos-item">
@@ -281,8 +281,8 @@ function casos(vak){
   return x
 }
 
-let ret = ""
-for (let i = 0; i < items.length; i++) {
+var ret = ""
+for (var i = 0; i < items.length; i++) {
   const x = items[i]
   ret += itemsF(x,i)
 }
