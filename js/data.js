@@ -80,6 +80,13 @@ const p2_multi = [
   "Translados de Huespedes entre Hoteles"
 ]
 
+const p1_onli = ["Reservas en 6 sencillos pasos.El cliente puede reservar varias habitaciónes con diferentes cantidades de pax en una misma reserva. Permite reservar servicios adicionales. Permite configurar los textos de habitaciones, servicios adicionales y descripciones en los tres idiomas."]
+const p2_onli = [
+  "Responsive: Interfaz autoadaptable a dispositivos móviles.",
+  "Disponible en Ingles, Español y Francés.",
+  "Imágenes personalizables."
+]
+
 
 const img = "img/compras.png"
 const p2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in iaculis neque. Mauris consectetur leo ipsum, eget porttitor metus porta ac. Donec in massa eget lectus aliquet vulputate"
@@ -261,6 +268,23 @@ const box_multi = [
   }
 ]
 
+
+const box_onli = [
+  {
+    img: "img/multi1.png",
+    title: "Pronostico de Ingresos",
+    text: "Registro e inactivación de los usuarios de los distintos módulos del sistema."
+  }, {
+    img: "img/multi2.png",
+    title: "Pronóstico de Ocupación",
+    text: "Autorización o denegación de funciones en el sistema, permitir o denegar acceso directamente a bases de datos de los módulos."
+  }, {
+    img: "img/multi3.png",
+    title: "Translado de Huespedes",
+    text: "Registro de las actividades de los usuarios en el sistema en base al permiso utilizado, muy útil para auditar eventos y detectar errores de los usuarios en el uso del sistema."
+  }
+]
+
 const inventory  = {
 "background": "inventory-f",
 "logo":"img/productos/inventory.png",
@@ -395,9 +419,20 @@ const multi  = {
 "hash":"multiproperty"
 }
 
+const onli  = {
+"background": "payroll-f",
+"logo":"img/productos/online.png",
+"img":"img/online.png",
+"nombre":"Online",
+"p1":p1_onli,
+"p2":p2_onli,
+"box": box_multi,
+"hash":"online"
+}
 
 
-const json = [front,point,inventory,accounting,fixed,payroll,tour,dds,management,comunication,multi,mail]
+
+const json = [front,point,inventory,accounting,fixed,payroll,tour,dds,management,comunication,multi,mail,onli]
 
 function Box(img, title, text) {
   let ret = `<div class="column is-4">\
