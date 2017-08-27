@@ -19,6 +19,8 @@ $(function () {
             data: $('form').serialize(),
             success: function () {
               snack();
+              console.log($(this));
+              $('form')[0].reset();
             }
           });
 
@@ -164,7 +166,6 @@ $b.hover( function(e){//mouseenter
   var x = $(".active").find(".img");
   var index = parseInt(x.data("index"));
   var img = x.data("img");
-  console.log("hover")
   i = (index>=img.length) ? 0 : index;
   animation(x,img,i);
 },function(){//mouseout
