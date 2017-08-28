@@ -156,7 +156,7 @@ function products(title,text,img1,img2,operations,index){
 
 
 const hotel1 = {img:"img/casos/hoteles/The Preserve at Los Altos.png",url:"http://www.thepreserveatlosaltos.com",img2:"img/flag-cr.png"}
-const hotel2 = {img:"img/casos/hoteles/logo hotel seminole colorX.png",url:"http://www.seminoleplaza.com",img2:"img/flag-cr.png"}
+const hotel2 = {img:"img/casos/hoteles/logo hotel seminole colorX.png",url:"http://www.seminoleplaza.com",img2:"img/flag-nc.png"}
 const hotel3 = {img:"img/casos/hoteles/VolcanoBN.jpg",url:"http://www.volcanolodge.com/es",img2:"img/flag-cr.png"}
 const hotel4 = {img:"img/casos/hoteles/San Bosco Inn.png",url:"http://www.hotelsanbosco.com/en/",img2:"img/flag-cr.png"}
 const hotel5 = {img:"img/casos/hoteles/Cano_Negro.png",url:"http://www.canonegrolodge.com",img2:"img/flag-cr.png"}
@@ -169,16 +169,16 @@ const hotel11 = {img:"img/casos/hoteles/Logo_Villa_del_Sueno_2017.png",url:"http
 const hotel12 = {img:"img/casos/hoteles/Chachagua_Eco_Lodge.png",url:"http://www.chachaguarainforesthotel.com/",img2:"img/flag-cr.png"}
 const hotel13 = {img:"img/casos/hoteles/downtown.png",url:"http://www.fortunadowntowninn.com/",img2:"img/flag-cr.png"}
 const hotel14 = {img:"img/casos/hoteles/Finca Luna Nueva Lodge.jpg",url:"http://www.fincalunanuevalodge.com/",img2:"img/flag-cr.png"}
-const hotel15 = {img:"img/casos/hoteles/LOGOTIPO HOTEL LOS ROBLES.jpg",url:"http://www.hotellosrobles.com",img2:"img/flag-cr.png"}
-const hotel16 = {img:"img/casos/hoteles/Logo Punta Teonoste.png",url:"http://www.puntateonoste.com/",img2:"img/flag-cr.png"}
+const hotel15 = {img:"img/casos/hoteles/LOGOTIPO HOTEL LOS ROBLES.jpg",url:"http://www.hotellosrobles.com",img2:"img/flag-nc.png"}
+const hotel16 = {img:"img/casos/hoteles/Logo Punta Teonoste.png",url:"http://www.puntateonoste.com/",img2:"img/flag-nc.png"}
 const hotel17 = {img:"img/casos/hoteles/Taormina.png",url:"http://www.taorminahotelandcasino.com/",img2:"img/flag-cr.png"}
-const hotel18 = {img:"img/casos/hoteles/Hotel_Executive_Managua.jpg",url:"http://www.executivemanagua.online.com.ni/",img2:"img/flag-cr.png"}
+const hotel18 = {img:"img/casos/hoteles/Hotel_Executive_Managua.jpg",url:"http://www.executivemanagua.online.com.ni/",img2:"img/flag-nc.png"}
 const hotel19 = {img:"img/casos/hoteles/Logo Bergerac.png",url:"http://www.bergerachotel.com/",img2:"img/flag-cr.png"}
 const hotel20 = {img:"img/casos/hoteles/agualcas.jpg",url:"http://www.hotelagualcas.com/",img2:"img/flag-cr.png"}
 const hotel21 = {img:"img/casos/hoteles/HCC_Guana LOGO.png",url:"http://www.casacondebeach.com/",img2:"img/flag-cr.png"}
 const hotel22 = {img:"img/casos/hoteles/Logo HCC.JPEG",url:"http://www.casacondecity.com/",img2:"img/flag-cr.png"}
-const hotel23 = {img:"img/casos/hoteles/Logo helsm.png",url:"http://www.lagunasanmartin.com.ni/",img2:"img/flag-cr.png"}
-const hotel24 = {img:"img/casos/hoteles/logo marbella.png",url:"http://www.marbella.com.ni/",img2:"img/flag-cr.png"}
+const hotel23 = {img:"img/casos/hoteles/Logo helsm.png",url:"http://www.lagunasanmartin.com.ni/",img2:"img/flag-nc.png"}
+const hotel24 = {img:"img/casos/hoteles/logo marbella.png",url:"http://www.marbella.com.ni/",img2:"img/flag-nc.png"}
 const hotel25 = {img:"img/casos/hoteles/Casa Roland Marina Golfito.png",url:"http://www.casarolandgolfito.com/",img2:"img/flag-cr.png"}
 const hotel26 = {img:"img/casos/hoteles/Logo-Casa-Ronald-SJ-200px.png",url:"http://www.casarolandsanjose.com/",img2:"img/flag-cr.png"}
 const hotel27 = {img:"img/casos/hoteles/Villas-Lirio.png",url:"http://www.villaslirio.com/",img2:"img/flag-cr.png"}
@@ -204,7 +204,6 @@ const hoteles1 = [
   hotel16,
   hotel17,
   hotel18,
-  hotel19,
   hotel20,
   hotel21,
   hotel22,
@@ -220,7 +219,7 @@ const hoteles1 = [
 
 const restaurante1 = {img:"img/casos/restaurantes/elgranescape.jpg",url:"http://www.elgranescapequepos.com/",img2:"img/flag-cr.png"}
 const restaurante2 = {img:"img/casos/restaurantes/lo sabroso maiz.png",url:"http://losabrosodelmaiz.com/",img2:"img/flag-cr.png"}
-const restaurante3 = {img:"img/casos/restaurantes/Logo EF.jpg",url:"http://elfloriditanicaragua.com/",img2:"img/flag-cr.png"}
+const restaurante3 = {img:"img/casos/restaurantes/Logo EF.jpg",url:"http://elfloriditanicaragua.com/",img2:"img/flag-nc.png"}
 const restaurantes1 = [restaurante1,restaurante2,restaurante3]
 
 const tour1 = {img:"img/casos/tours/TIMON_COLOR.JPG",url:"http://www.bayislandcruises.com/",img2:"img/flag-cr.png"}
@@ -237,7 +236,7 @@ const empresa3 = {img:"img/casos/empresas/job solutions.png",url:"http://www.job
 const empresas1 = [empresa1,empresa2,empresa3]
 
 const institucion1 = {img:"img/casos/instituciones/CDS-Logo.jpg",url:"https://www.cds.ed.cr/",img2:"img/flag-cr.png"}
-const institucion2 = {img:"img/casos/instituciones/unitec.png",url:"http://www.unitec.edu.ni/",img2:"img/flag-cr.png"}
+const institucion2 = {img:"img/casos/instituciones/unitec.png",url:"http://www.unitec.edu.ni/",img2:"img/flag-nc.png"}
 const institucion3 = {img:"img/casos/instituciones/og_logo_ue.png",url:"https://www.earth.ac.cr/es/",img2:"img/flag-cr.png"}
 const instituciones1 = [institucion1,institucion2,institucion3]
 
