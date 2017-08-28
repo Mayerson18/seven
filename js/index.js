@@ -189,7 +189,8 @@ function animation(x,img,i){
     loop:true,
     items: 1,
     margin: 0,
-    dots:false,
+    dots:true,
+
     autoplay:true,
     autoplayTimeout:6000
   });
